@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <form class="row g-3 mt-3">
+            
+            <div class="col-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
+            </div>
+
+            <div class="col-6">
+                <label for="pass" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Ingresa tu comtraseña" required>
+            </div>  
+
+            
+            <div class="col-12">
+                <label for="address" class="form label">Direccion: </label>
+                <input type="text" class="form-control" id="address" placeholder="Dirección principal">
+            </div>
+
+            
+            <div class="col-12">
+                <label for="address2" class="form label">Direccion: </label>
+                <input type="text" name="address2" class="form-control" id="address2" placeholder="Dirección secundaria">
+            </div>
+
+
+        
+            <div class="col-6">
+                <label for="city" class="form-label" >Ciudad: </label>
+                <input type="text" name="city" id="city" class="form-control" placeholder="Ciudad">
+            </div>
+
+            <div class="col-3">
+                <label for="cp" class="form-label">Código Postal:</label>
+                <input type="text" class="form-control" name="cp" id="cp" placeholder="Codigo Postal 6 Digitos">
+            </div>
+
+            <div class="col-3">
+                <label for="country" class="form-label">Pais: </label>
+                <input type="text" name="country" id="country" class="form-control" placeholder="Ingresa tu pais">
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="form-chek">
+                    <input type="checkbox" name="checkTerms" class="form-chek-input" id="checkTerms">
+                    <label for="checkTerms" class="form-check-label" required>Acepto los terminos y condiciones.</label>                
+                </div>
+            </div>
+
+            <div class="col-12 mt-1">
+                <button type="submit" value="" class="btn btn-primary">Enviar</button>
+            </div>        
+        </form>
+    </div>
+
+
+
+     <!-- Agrega la referencia a Bootstrap JS (opcional si no necesitas funcionalidades de Bootstrap JS) -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
