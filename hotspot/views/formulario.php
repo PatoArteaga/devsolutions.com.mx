@@ -22,6 +22,7 @@
         
             <div class="col-6">
             <form method="post" action="../controllers/crearegistro.php">
+
             <label for="id_nombre" class="form-label">Nombre: </label>
             <input type="text" name="nombre" id="id_nombre" class="form-control" placeholder="Introduce tu nombre"  required>
              

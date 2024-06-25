@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET['c'])){
-    echo "No se asigno valor a la variable"."<br>";
+    //echo "No se asigno valor a la variable"."<br>";
     require_once ("./controllers/inicio.controlador.php");
     $controlador=new InicioControlador();
     call_user_func(array($controlador,"Inicio"));
@@ -9,9 +9,6 @@ if(!isset($_GET['c'])){
     include ("./models/mdl.conexion.php");
     $con=new Conection();
     $con->conect();
-
-
-
     }
 
 else{
@@ -19,10 +16,12 @@ else{
 
     $controlador= $_GET['c'];
     require_once("./controllers/.$controlador.controlador.php");
+
     $controlador = ucwords($controlador)."controlador";
     $controlador = new $controlador;
+    
     $accion = isset($_GET['a']) ? $_GET['c'] : "Inicio";
-    call_user_func(array($controlador,$accion));
+    call_user_func(array($controlador,$accion));        
 
 
     
