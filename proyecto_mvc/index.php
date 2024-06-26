@@ -1,14 +1,19 @@
 <?php
+  require_once ("./models/mdl.conexion.php");
+  //$con=new Conection();
+  //$con->conect();
+
+
+
+
+
 if(!isset($_GET['c'])){
     //echo "No se asigno valor a la variable"."<br>";
     require_once ("./controllers/inicio.controlador.php");
     $controlador=new InicioControlador();
     call_user_func(array($controlador,"Inicio"));
 
-
-    include ("./models/mdl.conexion.php");
-    $con=new Conection();
-    $con->conect();
+  
     }
 
 else{
