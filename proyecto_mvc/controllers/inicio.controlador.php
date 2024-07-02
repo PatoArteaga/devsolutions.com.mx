@@ -11,8 +11,11 @@
         public function Inicio(){
             $con=Conection::conect();
             
-            echo "<br>Entro al controlador de Inicio <br>";
+           // echo "<br>Entro al controlador de Inicio <br>";
+
+            require_once ("./views/header.php");
             require_once ("./views/inicio/principal.php");
+            require_once ("./views/footer.php");
 
             //Esta instruccion es similar a las dos de abajo
              

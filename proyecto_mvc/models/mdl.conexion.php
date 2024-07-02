@@ -15,7 +15,7 @@
                 //echo "Entro a conectar";                
                 $conexion=new PDO (self::dsn,self::user,self::password);                
                 $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-                echo "<br>Se realizo la conexion";
+                //echo "<br>Se realizo la conexion";
                 return $conexion;
                 }
             catch(PDOException $error){          

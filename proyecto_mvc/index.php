@@ -3,10 +3,6 @@
   //$con=new Conection();
   //$con->conect();
 
-
-
-
-
 if(!isset($_GET['c'])){
     //echo "No se asigno valor a la variable"."<br>";
     require_once ("./controllers/inicio.controlador.php");
@@ -26,10 +22,9 @@ else{
     $controlador = new $controlador;
     
     $accion = isset($_GET['a']) ? $_GET['c'] : "Inicio";
-    call_user_func(array($controlador,$accion));        
+    call_user_func(array($controlador,$accion));   
+    
 
 
-    
-    
     }
 ?>
