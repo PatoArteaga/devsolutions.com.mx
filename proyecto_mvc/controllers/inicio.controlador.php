@@ -1,15 +1,17 @@
 <?php
+    require_once("./models/mdl.productos.php");
+
     class InicioControlador{
         private $modelo;
 
 
         public function __construct(){
-            //$this->modelo=new Producto();
+            $this->modelo=new Producto();
         }
 
 
         public function Inicio(){
-            $con=Conection::conect();
+          //  $con=Conection::conect();
             
            // echo "<br>Entro al controlador de Inicio <br>";
 

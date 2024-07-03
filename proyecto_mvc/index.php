@@ -16,15 +16,12 @@ else{
     echo"Valor de la variable controlador: ".$_GET['c'];
 
     $controlador= $_GET['c'];
-    require_once("./controllers/.$controlador.controlador.php");
+    require_once("./controllers/$controlador.controlador.php");
 
     $controlador = ucwords($controlador)."controlador";
     $controlador = new $controlador;
     
     $accion = isset($_GET['a']) ? $_GET['c'] : "Inicio";
-    call_user_func(array($controlador,$accion));   
-    
-
-
-    }
+    call_user_func(array($controlador,$accion));
+  }
 ?>
