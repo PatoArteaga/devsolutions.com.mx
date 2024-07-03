@@ -15,8 +15,8 @@
           <div class="col-md-6">
             <div class="card">
               <h3 class="card-title">Cantidad Productos.</h3>
-              <p><?php $p=$this->modelo->Cantidad()?>
-              <?=$p->Cantidad?>
+              <p><?php $p=$this->modelo->Cantidad();?>
+              <?=$p->cantidad?>
               
               
               </p>
