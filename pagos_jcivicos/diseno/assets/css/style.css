@@ -6,3 +6,57 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+body{
+    overflow-x: hidden;
+}
+.input-group .form-control{
+    z-index: 0!important;
+}
+.contenedor-video{
+    position:fixed; 
+    bottom:10px;
+    right:10px; 
+    width: 350px; 
+    z-index:99;                                
+    height: 200px;
+}
+.video{
+    border:none;
+    overflow:hidden;
+    width: 350px;
+    height: 200px;
+}
+.display_none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+    justify-content: end;
+    
+}
+.cta-cerrar{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.cta-cerrar:hover{
+    background-color: gray;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+    .contenedor-video{
+        width: 200px;
+        bottom:-40px;
+    }
+     .video{
+        width: 200px;
+     }
+}

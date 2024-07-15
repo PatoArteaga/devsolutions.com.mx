@@ -16,41 +16,158 @@
         <div class="row">        
             <div class="col-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/imgs/coorp2018_2024_2.png" alt="" class="img-personal-header"  ></div>
-
+                    <div class="panel-heading"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/imgs/coorp2018_2024_2.png" alt="" class="img-personal-header"></div>
                     <div class="panel-body">
                         <div style="border:1px solid #000000; margin-top: 0px;margin-bottom: 15px;" class="form-group"></div>
                         <h3 class="text-center"><b>Bienvenido, consulta tus adeudos de multas y recargos del Juzgado Civico</b></h3>
                         <div class="bg-warning">
-                            <center><h4 class="mb-4"><b><br>Estimado contribuyente.</b></h4> </center>
+                        <center><h4 class="mb-4"><b><br>Estimado contribuyente.</b></h4> </center>
                             <ul>
                                 <li><p>Para generar tu formato de pago en banco o pago en linea deberás consultar por tu <strong>CURP</strong> y folio de <strong>MULTA</strong></p></li>
-                                <li><p>En caso de no haber realizado el canje de placas, podrá realizarlo acudiendo presencialmente a las oficinas de recaudación <a href="https://zitacuaro.gob.mx">Ver oficinas</a> </p></li>
+                            <!-- <li><p>En caso de no haber realizado el canje de placas, podrá realizarlo acudiendo presencialmente a las oficinas de recaudación <a href="https://zitacuaro.gob.mx">Ver oficinas</a> </p></li> -->
                             </ul>
-                                <center><h5><b>Aplica a meses sin intereses solo con tarjetas de crédito BBVA y CitiBanamex</b></h5></center>
-                            </div>
-                            <!--
-                            Formulario de consulta
-                            -->               
+                        <center><h5><b>Aplica a meses sin intereses solo con tarjetas de crédito BBVA y CitiBanamex</b></h5></center>
+                        </div>
+                        <!--Formulario de consulta-->               
+                        <b><b>
+                            <!-- Contenido del modal -->                                                
+                            <div id="div_particular">
+                                <form role="search" id="" name="" class="form-horizontal" method="POST">
+                                    <div class="row vh-100 justify-content-around align-items-center">
+                                    <div class="col-sm-4 border">
+                                    </div>
+                                     <div class="col-sm border">
+                                        <div class="container form-group  col-lg-5" style="display:">
+                                            <div class="contanier"> <!--//style="border:1px  solid #000010; "-->
+                                                <div class="form-group col-lg-13"> 
+                                                    <center>
+                                                    <div></div>
+                                                    <div class="panel-body"><h2><b>Introduce los datos de la multa</b></h2></div>
+                                                    </center>
+                                                </div>
+                                            </div>
+                                            <div class=" container  justify-content-around align-items-center">
+                                                <div class="col-sm-1 border">
+                                                    <center><h1><i class="fa fa-car" aria-hidden="true"></i></h1></center>
+                                                </div>
+                                                <div class="col-sm-4 border align-items-center">
+                                                    <div class="form-group col-lg-13">
+                                                        <label for="placa" class="col-sm-3 control-label">CURP: </label>
+                                                        <div class="input-group   col-lg-8">
+                                                        <span class="input-group-addon">
+                                                            <i class="glyphicon glyphicon-road"></i>
+                                                        </span>
+                                                        <input type="text" tabindex="1" class="form-control" placeholder="Introduce tu CURP" id="placa" name="placa" style="text-transform: uppercase;" maxlength="8" required="" onkeyup="mayus(this);" onkeypress="return checkinput(event)">
+                                                        </div>
+                                                    </div> 
+                                                    <div class="form-group col-lg-13 text-center">
+                                                        <label for="serie" class="col-sm-3 control-label">MULTA: </label>
+                                                        <div class="input-group col-lg-8">
+                                                            <span class="input-group-addon">
+                                                                <i class="glyphicon glyphicon-road"></i>
+                                                            </span>
+                                                            <input type="text" tabindex="2" data-validation="length alphanumeric" data-validation-optional-if-answered="placa" data-validation-length="7-17" data-validation-error-msg="Serie no válida." class="form-control" placeholder="Introduceel folio de MULTA" id="serie" name="serie" style="text-transform: uppercase;" required="" onkeyup="mayus(this);" onkeypress="return checkdinput(event)">
+                                                                                        
+                                                        </div>                                                                                        <!-- PARTE DEL CAPTCHA V3 -->                              
+                                                        <input type="hidden" id="token" name="token" value="">                                
+                                                        <!-- PARTE DEL CAPTCHA V3 -->	
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="container  col-lg-1 align-items-center">&nbsp;&nbsp;&nbsp; 
+                                                <label for="serie" class="offset-lg-1 col-sm-1 control-label">
+                                                <button type="submit" data-callback="onSubmit" data-action="submit" class="g-recaptcha btn btn-md " style="border: 2px solid black; background-color: #671648; margin:0 auto;  font-size: 20px;  color: white; width: 350px;" data-sitekey="6LeopFspAAAAAC_Vbizliv1l5f22HwL_SfBleZhg" id="buttonConsulta" value="Consultar" aria-label="Left Align">
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Consultar
+                                                </button>   
+                                                </label>                               
+                                            </div>
 
-                     
-                       
-
-
-
-
-
-
-
-
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </form>
+                        </div>
                     </div>                
-                  <!--   <div class="panel-footer">                     
-                            <center><div><h3><b>Gracias por usar nuestro servicio</b></h3></div></center>
+                    <!--  <div class="panel-footer">                     
+                        <center><div><h3><b>Gracias por usar nuestro servicio</b></h3></div></center>
                     </div> -->
-
-                  </div>
+                </div>
             </div>
         </div>
+
+
+    <!-- FOOTER -->
+        <div class="row">
+            <footer class="container-fluid">
+                <div class="container">
+                    <div class="row">
+        
+                        <div class="col-xs-6 col-md-2" align="center">
+                            <img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/imgs/design16/escudozit.png" class="img-responsive" alt="Escudo de Zitácuaro" title="Escudo de Zitácuaro" width="150" height="180" align="center">
+                        </div>
+                        <div class="col-xs-6 col-md-2" align="center">
+                            <a href="http://www.editorialox.com/" target="_blank" data-toggle="tooltip" data-placement="left" title="" data-original-title="Premio Internacional OX"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/premioOX.png" class="img-responsive" width="117" height="180" alt="Premio Internacional OX" title="Premio Internacional OX"></a>
+                        </div>
+                        <br>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 text">
+                                    
+                                    <h4><a data-toggle="modal" data-target="#modalGuiaTel" title="Guía contacto municipal"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Guia de contacto municipal"><i class="fa fa-phone-square"></i>  Guía contacto municipal <i class="fa  fa-envelope"></i></span></a> | <a data-fancybox="" data-type="iframe" data-src="transparencia/avisoprivacidad.pdf" href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aviso de privacidad"><i class="fa fa-lock"></i> Aviso de privacidad</a> </h4>
+                                    <h4><a data-fancybox="" data-type="iframe" data-src="transparencia/avisoprivacidadOIC.pdf" href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Aviso de privacidad"><i class="fa fa-lock"></i> Aviso de privacidad de la Contraloria Municipal</a> </h4>
+                                    <p lang="es">Programación y diseño web, área de Informática</p>
+                                    <p lang="es">Administración, Sala de prensa y Diseño gráfico, coordinación de Comunicación Social</p>
+                                    <p lang="es">Copyright © Ayuntamiento de Zitácuaro | Todos los derechos Reservados </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-2 text" align="center">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p lang="es"><strong>SIGUENOS EN:</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://www.facebook.com/ayuntamientozitacuaro/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Siguenos en facebook"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/facebook_ng.png" width="38" height="38" alt="Siguenos en facebook"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Siguenos en twitter"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/twitter_ng.png" width="38" height="38" alt="Siguenos en twitter"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://www.instagram.com/zitacuaro_ayuntamiento/" data-toggle="tooltip" data-placement="top" title="" data-original-title="Siguenos en instagram"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/instagram_ng.png" width="38" height="38" alt="Siguenos en instagram"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://www.youtube.com/channel/UC2m9bHbE2dXqnagMYmEag3A" data-toggle="tooltip" data-placement="top" title="" data-original-title="Siguenos en youtube"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/youtube_ng.png" width="38" height="38" alt="Siguenos en youtube"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p lang="es">&nbsp;</p>
+                                    <p lang="es" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sistemas de Información Municipal"><strong>Sistemas de Información Municipal:</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://zitacuaro.sytes.net/ventanilla" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Ventanilla única"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/ventanilla.png" width="38" height="38" alt="Sistema de ventanilla única"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://zitacuaro.sytes.net/recibos" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Sistema de recibos"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/recibos.png" width="38" height="38" alt="Sistema de Recibos"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+                                    <a href="https://www.zitacuaro.gob.mx:2096" data-toggle="tooltip" data-placement="top" title="" target="_blank" data-original-title="Correo institucional"><img src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/images/design16/correo.png" width="38" height="38" alt="Correo institucional"></a>
+                                </div>
+                                <div class="col-xs-3 col-md-3">
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
     </div>
 
 
