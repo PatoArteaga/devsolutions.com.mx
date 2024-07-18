@@ -11,7 +11,6 @@
     -->
 </head>
 <body>
-
     <div class="container ">
         <div class="row">        
             <div class="col-12">
@@ -30,56 +29,60 @@
                         </div>
                         <!--Formulario de consulta-->               
                         <b><b>
-                            <!-- Contenido del modal -->                                                
-                            <div id="div_particular">
-                                <form role="search" id="" name="" class="form-horizontal" method="POST">
-                                    <div class="row vh-100 justify-content-around align-items-center">
+                        <!-- Contenido del modal -->                                                
+                        <div id="div_particular">
+                            <form role="search" id="" name="" class="form-horizontal" method="POST">
+                                <div class="row vh-100 justify-content-around align-items-center">
                                     <div class="col-sm-4 border">
                                     </div>
-                                     <div class="col-sm border">
+                                    <div class="col-sm border">
                                         <div class="container form-group  col-lg-5" style="display:">
-                                            <div class="contanier"> <!--//style="border:1px  solid #000010; "-->
-                                                <div class="form-group col-lg-13"> 
-                                                    <center>
-                                                    <div></div>
-                                                    <div class="panel-body"><h2><b>Introduce los datos de la multa</b></h2></div>
-                                                    </center>
-                                                </div>
+                                        <div class="contanier"> <!--//style="border:1px  solid #000010; "-->
+                                            <div class="form-group col-lg-13"> 
+                                                <center>
+                                                <div></div>
+                                                <div class="panel-body"><h2><b>Introduce los datos de la multa</b></h2></div>
+                                                </center>
                                             </div>
-                                            <div class=" container  justify-content-around align-items-center">
-                                                <div class="col-sm-1 border">
-                                                    <center><h1><i class="fa fa-car" aria-hidden="true"></i></h1></center>
-                                                </div>
-                                                <div class="col-sm-4 border align-items-center">
-                                                    <div class="form-group col-lg-13">
-                                                        <label for="placa" class="col-sm-3 control-label">CURP: </label>
-                                                        <div class="input-group   col-lg-8">
+                                        </div>
+                                        <div class=" container  justify-content-around align-items-center">
+                                            <div class="col-sm-1 border">
+                                                <center><h1><i class="fa fa-car" aria-hidden="true"></i></h1></center>
+                                            </div>
+                                            <div class="col-sm-4 border align-items-center">
+                                                <div class="form-group col-lg-13">
+                                                    <label for="placa" class="col-sm-3 control-label">CURP: </label>
+                                                    <div class="input-group   col-lg-8">
+                                                    <span class="input-group-addon">
+                                                        <i class="glyphicon glyphicon-road"></i>
+                                                    </span>
+                                                    <input type="text" tabindex="1" class="form-control" placeholder="Introduce tu CURP" id="placa" name="placa" style="text-transform: uppercase;" maxlength="8" required="" onkeyup="mayus(this);" onkeypress="return checkinput(event)">
+                                                    </div>
+                                                </div> 
+                                                <div class="form-group col-lg-13 text-center">
+                                                    <label for="serie" class="col-sm-3 control-label">MULTA: </label>
+                                                    <div class="input-group col-lg-8">
                                                         <span class="input-group-addon">
                                                             <i class="glyphicon glyphicon-road"></i>
                                                         </span>
-                                                        <input type="text" tabindex="1" class="form-control" placeholder="Introduce tu CURP" id="placa" name="placa" style="text-transform: uppercase;" maxlength="8" required="" onkeyup="mayus(this);" onkeypress="return checkinput(event)">
-                                                        </div>
-                                                    </div> 
-                                                    <div class="form-group col-lg-13 text-center">
-                                                        <label for="serie" class="col-sm-3 control-label">MULTA: </label>
-                                                        <div class="input-group col-lg-8">
-                                                            <span class="input-group-addon">
-                                                                <i class="glyphicon glyphicon-road"></i>
-                                                            </span>
-                                                            <input type="text" tabindex="2" data-validation="length alphanumeric" data-validation-optional-if-answered="placa" data-validation-length="7-17" data-validation-error-msg="Serie no válida." class="form-control" placeholder="Introduceel folio de MULTA" id="serie" name="serie" style="text-transform: uppercase;" required="" onkeyup="mayus(this);" onkeypress="return checkdinput(event)">
+                                                        <input type="text" tabindex="2" data-validation="length alphanumeric" data-validation-optional-if-answered="placa" data-validation-length="7-17" data-validation-error-msg="Serie no válida." class="form-control" placeholder="Introduceel folio de MULTA" id="serie" name="serie" style="text-transform: uppercase;" required="" onkeyup="mayus(this);" onkeypress="return checkdinput(event)">
                                                                                         
-                                                        </div>                                                                                        <!-- PARTE DEL CAPTCHA V3 -->                              
-                                                        <input type="hidden" id="token" name="token" value="">                                
-                                                        <!-- PARTE DEL CAPTCHA V3 -->	
+                                                        </div>                                                <input type="hidden" id="token" name="token" value="">                                
                                                     </div>
                                                 </div> 
-                                            </div>
-                                            <div class="container  col-lg-1 align-items-center">&nbsp;&nbsp;&nbsp; 
-                                                <label for="serie" class="offset-lg-1 col-sm-1 control-label">
-                                                <button type="submit" data-callback="onSubmit" data-action="submit" class="g-recaptcha btn btn-md " style="border: 2px solid black; background-color: #671648; margin:0 auto;  font-size: 20px;  color: white; width: 350px;" data-sitekey="6LeopFspAAAAAC_Vbizliv1l5f22HwL_SfBleZhg" id="buttonConsulta" value="Consultar" aria-label="Left Align">
-                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Ver Adeudo</button>   
-                                                </label>                               
-                                            </div>
+                                        </div>
+                                        <!-- <div class="container  col-lg-1 align-items-center">&nbsp;&nbsp;&nbsp; 
+                                        <label for="serie" class="offset-lg-1 col-sm-1 control-label">
+                                        <button type="submit" data-callback="onSubmit" data-action="submit" class="g-recaptcha btn btn-md " style="border: 2px solid black; background-color: #671648; margin:0 auto;  font-size: 20px;  color: white; width: 350px;" data-sitekey="6LeopFspAAAAAC_Vbizliv1l5f22HwL_SfBleZhg" id="buttonConsulta" value="Consultar" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Ver Adeudo</button>   
+                                        </label>                               
+                                        </div> -->
+                                        <div class="container  col-lg-1 align-items-center">&nbsp;&nbsp;&nbsp; 
+                                        <label for="serie" class="offset-lg-1 col-sm-1 control-label">
+                                        <button type="submit" class="g-recaptcha btn btn-md " style="border: 2px solid black; background-color: #671648; margin:0 auto;  font-size: 20px;  color: white; width: 350px;" data-sitekey="6LeopFspAAAAAC_Vbizliv1l5f22HwL_SfBleZhg" id="buttonConsulta" value="Consultar" aria-label="Left Align" onclick="verDatos()">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Ver Adeudo</button>   
+                                        </label>                               
+                                    </div>
 
                                         </div>
                                     </div>
@@ -165,14 +168,13 @@
                 </div>
             </footer>
         </div>
-
-
     </div>
 
 
     <script src="/devsolutions.com.mx/pagos_jcivicos/diseno/assets/js/jQuery3.7.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
    </body>
 </html>

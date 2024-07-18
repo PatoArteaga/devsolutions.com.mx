@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Outwor1d";
+$password = "";
 $database = "hotspot";
 //$password = "Outwor1d";
 // Create connection
