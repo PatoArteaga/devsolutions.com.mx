@@ -1,5 +1,5 @@
 <?php
-  require_once ("./models/mdl.conexion.php");
+  require_once("./models/mdl.conexion.php");
   //$con=new Conection();
   //$con->conect();
 
@@ -21,7 +21,7 @@ else{
     $controlador = ucwords($controlador)."controlador";
     $controlador = new $controlador;
     
-    $accion = isset($_GET['a']) ? $_GET['c'] : "Inicio";
+    $accion = isset($_GET['a']) ? $_GET['a'] : "Inicio";
     call_user_func(array($controlador,$accion));
   }
 ?>

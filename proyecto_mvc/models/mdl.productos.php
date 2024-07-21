@@ -22,7 +22,7 @@ class Producto{
     }
 
     public function getnombre_prod(): ?string{
-        return $this->nobre_prod;
+        return $this->nombre_prod;
     }
 
     public function setnombre_prod(string $nombre){
@@ -94,6 +94,29 @@ class Producto{
 
         }
     }
+
+    public function Insertar(Producto $p){
+        try{
+            $consulta="INSERT INTO productos(nombre_prod,marca_prod,costo_prod,precio_prod,cantidad_prod) VALUES (?,?,?,?,?)";
+           $this->pdo->prepare($consulta)->execute(array(
+            $p->getnombre_prod(),
+            $p->getmarca_prod(),
+            $p->getcosto_prod(),
+            $p->getprecio_prod(),
+            $p->getcantidad_prod()
+            ));
+
+           // return $consulta->fetchAll(PDO::FETCH_OBJ);
+
+        }
+        catch(Exception $e){
+            die($e->getMessage());
+
+        }
+
+
+    }
+
 
 
 
