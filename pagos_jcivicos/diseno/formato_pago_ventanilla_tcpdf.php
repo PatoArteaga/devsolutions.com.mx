@@ -1,11 +1,5 @@
 
 <html>
-    <style>
-     
-
-    </style>
-
-
 <table style="height: 46px; width: 950px;">
 <tbody>
 <tr style="height: 150px;">
@@ -19,8 +13,10 @@
 </tbody>
 </table>
 <p>&nbsp;</p>
+
 <table style="height: 11px; width: 1017px;">
 <tbody>
+    
 <tr style="height: 13px;">
 <td style="width: 66.6406px; height: 13px; text-align: left;">RFC:</td>
 <td style="width: 595.359px; height: 13px; text-align: left;">&nbsp;AEML880407C93</td>
@@ -33,6 +29,8 @@
 </tr>
 </tbody>
 </table>
+
+
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>

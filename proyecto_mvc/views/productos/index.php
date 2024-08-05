@@ -8,13 +8,9 @@
               <li class="active"><a href="#">Data Table</a></li>
             </ul>
           </div>
-          <div><a class="btn btn-primary btn-flat" href="?c=productos&a=FormCrear"><i class="fa fa-lg fa-plus"></i></a>
-          
-          <a class="btn btn-info btn-flat" href="#"><i class="fa fa-lg fa-refresh"></i></a>
-          
-          <a class="btn btn-warning btn-flat" href="#"><i class="fa fa-lg fa-trash"></i></a></div>
-        
+          <div><a class="btn btn-primary btn-flat" href="?c=productos&a=FormCrear"><i class="fa fa-lg fa-plus"></i></a>  
         </div>
+      </div>
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -43,7 +39,9 @@
                       <td><?=$r->precio_prod; ?></td>
                       <td><?=$r->cantidad_prod; ?></td>
                       <td><?=$r->img_prod; ?></td>
-                      <td>Borrar|Editar</td>
+                      <td>
+                        <a class="btn btn-info btn-flat" href="?c=Productos&a=FormCrear&id=<?=$r->id_prod; ?>"><i class="fa fa-lg fa-refresh"></i></a>
+                        <a class="btn btn-warning btn-flat" href="?c=Productos&a=Borrar&id=<?=$r->id_prod; ?>"><i class="fa fa-lg fa-trash"></i></a></div></td>
                     </tr>
                     <?php }?>
                   </tbody>

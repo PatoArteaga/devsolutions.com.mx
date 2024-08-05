@@ -117,6 +117,76 @@ class Producto{
 
     }
 
+    public function Obtener($id){
+        try{
+            $consulta=$this->pdo->prepare("SELECT * FROM productos where id_prod=?;");
+            $consulta->execute(array($id));
+            $r=$consulta->fetch(PDO::FETCH_OBJ);
+            
+            $p=new Producto();
+
+            $p->setid_prod($r->id_prod);
+            $p->setnombre_prod($r->nombre_prod);
+            $p->setmarca_prod($r->marca_prod);
+            $p->setcosto_prod($r->costo_prod);
+            $p->setprecio_prod($r->precio_prod);
+            $p->setcantidad_prod($r->cantidad_prod);
+            $p->setimg_prod($r->img_prod);
+            
+            return $p;
+        }
+        catch(Exception $e){
+            die($e->getMessage());
+
+        }
+    }
+
+    public function Actualizar(Producto $p){
+        try{
+            $consulta="UPDATE productos SET 
+            nombre_prod=?,
+            marca_prod=?,
+            costo_prod=?,
+            precio_prod=?,
+            cantidad_prod=?
+            WHERE id_prod=?;";
+
+           $this->pdo->prepare($consulta)->execute(array(
+            $p->getnombre_prod(),
+            $p->getmarca_prod(),
+            $p->getcosto_prod(),
+            $p->getprecio_prod(),
+            $p->getcantidad_prod(),
+            $p->getid_prod()
+            ));
+
+           // return $consulta->fetchAll(PDO::FETCH_OBJ);
+
+        }
+        catch(Exception $e){
+            die($e->getMessage());
+
+        }
+
+
+    }
+
+
+    public function Eliminar($id){
+        try{
+            $consulta="DELETE FROM productos WHERE id_prod=?;";
+           $this->pdo->prepare($consulta)->execute(array($id));
+
+           // return $consulta->fetchAll(PDO::FETCH_OBJ);
+
+        }
+        catch(Exception $e){
+            die($e->getMessage());
+
+        }
+
+
+    }
 
 
 
