@@ -2,8 +2,8 @@
     class Conection{
         const servidor="localhost";
         const user="root";
-        const password="";
-        //const password="Outwor1d";
+        //const password="";
+        const password="Outwor1d";
         const db="proyecto_mvc";   
         const dsn="mysql:host=".self::servidor.";dbname=".self::db.";charset=UTF8";
         const conexion="";

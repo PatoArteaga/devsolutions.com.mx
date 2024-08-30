@@ -1,3 +1,3 @@
 <?php
-echo "Hola desde plantilla";
+echo "Hola desde plantilla frontend";
 ?>
