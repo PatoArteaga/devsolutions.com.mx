@@ -1,0 +1,7 @@
+[02-Oct-2024 03:03:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorSlide::ctrMostrarSlide() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\slide.php:19
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(268): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\slide.php on line 19

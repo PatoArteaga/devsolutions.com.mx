@@ -1,0 +1,4 @@
+[23-Sep-2024 07:04:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method ControllerPlantilla::Plantilla1() in C:\xampp\htdocs\devsolutions.com.mx\agrodev\backend\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\backend\index.php on line 9
