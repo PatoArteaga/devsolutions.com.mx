@@ -5,3 +5,100 @@ Stack trace:
 #2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
 #3 {main}
   thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\slide.php on line 19
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:05:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:06:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 05:06:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:06:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:06:42 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 232
+[02-Oct-2024 05:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:58:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 232
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 05:58:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 45
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php on line 204
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 371
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Warning:  Undefined array key 3 in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 391
+[02-Oct-2024 06:19:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Non-static method ControladorCarrito::ctrMostrarTarifas() cannot be called statically in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php:1308
+Stack trace:
+#0 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\plantilla.php(248): include()
+#1 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\controladores\plantilla.controlador.php(11): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\index.php(28): ControladorPlantilla->plantilla()
+#3 {main}
+  thrown in C:\xampp\htdocs\devsolutions.com.mx\agrodev\dev\frontend\vistas\modulos\infoproducto.php on line 1308
