@@ -6,7 +6,7 @@ class Ruta{
 	RUTA LADO DEL CLIENTE
 	=============================================*/	
 
-	public function ctrRuta(){
+	static public function ctrRuta(){
 
 		return "http://localhost/devsolutions.com.mx/agrodev/dev/backend/";
 	
@@ -16,7 +16,7 @@ class Ruta{
 	RUTA LADO DEL SERVIDOR
 	=============================================*/	
 
-	public function ctrRutaServidor(){
+	static public function ctrRutaServidor(){
 
 		return "http://localhost/devsolutions.com.mx/agrodev/dev/backend/";
 	

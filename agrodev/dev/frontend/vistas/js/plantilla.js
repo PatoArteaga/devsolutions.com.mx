@@ -11,7 +11,6 @@ $.ajax({
 
 	url:rutaOculta+"ajax/plantilla.ajax.php",
 	success:function(respuesta){
-		
 
 		var colorFondo = JSON.parse(respuesta).colorFondo;
 		var colorTexto = JSON.parse(respuesta).colorTexto;

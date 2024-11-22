@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -41,37 +40,36 @@
 		}
 
 		$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
+		if(is_array($cabeceras)){
+
 		
 		if(!$cabeceras["ruta"]){
-
 			$ruta = "inicio";
-
 			$cabeceras = ControladorPlantilla::ctrTraerCabeceras($ruta);
-
+			}
 		}
-
 	?>
 
 	<!--=====================================
 	Marcado HTML5
 	======================================-->
 
-	<meta name="title" content="<?php echo  $cabeceras['titulo']; ?>">
+	<meta name="title" content="<?php if(is_array($cabeceras)){echo  $cabeceras['titulo'];} ?>">
 
-	<meta name="description" content="<?php echo  $cabeceras['descripcion']; ?>">
+	<meta name="description" content="<?php if(is_array($cabeceras)){echo  $cabeceras['descripcion'];}?>">
 
-	<meta name="keyword" content="<?php echo  $cabeceras['palabrasClaves']; ?>">
+	<meta name="keyword" content="<?php if(is_array($cabeceras)){echo  $cabeceras['palabrasClaves']; }?>">
 
-	<title><?php echo  $cabeceras['titulo']; ?></title>
+	<title><?php if(is_array($cabeceras)){echo  $cabeceras['titulo'];}?></title>
 
 	<!--=====================================
 	Marcado de Open Graph FACEBOOK
 	======================================-->
 
-	<meta property="og:title"   content="<?php echo $cabeceras['titulo'];?>">
-	<meta property="og:url" content="<?php echo $url.$cabeceras['ruta'];?>">
-	<meta property="og:description" content="<?php echo $cabeceras['descripcion'];?>">
-	<meta property="og:image"  content="<?php echo $cabeceras['portada'];?>">
+	<meta property="og:title"   content="<?php if(is_array($cabeceras)){echo $cabeceras['titulo'];}?>">
+	<meta property="og:url" content="<?php if(is_array($cabeceras)){echo $url.$cabeceras['ruta'];}?>">
+	<meta property="og:description" content="<?php if(is_array($cabeceras)){echo $cabeceras['descripcion'];}?>">
+	<meta property="og:image"  content="<?php if(is_array($cabeceras)){echo $cabeceras['portada'];}?>">
 	<meta property="og:type"  content="website">	
 	<meta property="og:site_name" content="Tu logo">
 	<meta property="og:locale" content="es_CO">
@@ -80,19 +78,19 @@
 	Marcado para DATOS ESTRUCTURADOS GOOGLE
 	======================================-->
 	
-	<meta itemprop="name" content="<?php echo $cabeceras['titulo'];?>">
-	<meta itemprop="url" content="<?php echo $url.$cabeceras['ruta'];?>">
-	<meta itemprop="description" content="<?php echo $cabeceras['descripcion'];?>">
-	<meta itemprop="image" content="<?php echo $cabeceras['portada'];?>">
+	<meta itemprop="name" content="<?php if(is_array($cabeceras)){echo $cabeceras['titulo'];}?>">
+	<meta itemprop="url" content="<?php if(is_array($cabeceras)){echo $url.$cabeceras['ruta'];}?>">
+	<meta itemprop="description" content="<?php if(is_array($cabeceras)){echo $cabeceras['descripcion'];}?>">
+	<meta itemprop="image" content="<?php if(is_array($cabeceras)){echo $cabeceras['portada'];}?>">
 
 	<!--=====================================
 	Marcado de TWITTER
 	======================================-->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="<?php echo $cabeceras['titulo'];?>">
-	<meta name="twitter:url" content="<?php echo $url.$cabeceras['ruta'];?>">
-	<meta name="twitter:description" content="<?php echo $cabeceras['descripcion'];?>">
-	<meta name="twitter:image" content="<?php echo $cabeceras['portada'];?>">
+	<meta name="twitter:title" content="<?php if(is_array($cabeceras)){echo $cabeceras['titulo'];}?>">
+	<meta name="twitter:url" content="<?php if(is_array($cabeceras)){echo $url.$cabeceras['ruta'];}?>">
+	<meta name="twitter:description" content="<?php if(is_array($cabeceras)){echo $cabeceras['descripcion'];}?>">
+	<meta name="twitter:image" content="<?php if(is_array($cabeceras)){echo $cabeceras['portada'];}?>">
 	<meta name="twitter:site" content="@tu-usuario">
 
 
@@ -200,11 +198,10 @@ if(isset($_GET["ruta"])){
 	=============================================*/
 
 	$rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
-
-	if($rutas[0] == $rutaCategorias["ruta"]){
-
-		$ruta = $rutas[0];
-
+	if(is_array($rutaCategorias)){
+		if($rutas[0] == $rutaCategorias["ruta"]){
+			$ruta = $rutas[0];
+			}
 	}
 
 	/*=============================================
@@ -212,29 +209,28 @@ if(isset($_GET["ruta"])){
 	=============================================*/
 
 	$rutaSubCategorias = ControladorProductos::ctrMostrarSubCategorias($item, $valor);
+	
 
-	foreach ($rutaSubCategorias as $key => $value) {
+		foreach ($rutaSubCategorias as $key => $value) {
 		
-		if($rutas[0] == $value["ruta"]){
+			if($rutas[0] == $value["ruta"]){
 
-			$ruta = $rutas[0];
+				$ruta = $rutas[0];
 
-		}
+				}
 
-	}
+			}
+		
 
 	/*=============================================
 	URL'S AMIGABLES DE PRODUCTOS
 	=============================================*/
 
 	$rutaProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
-	
-	if($rutas[0] == $rutaProductos["ruta"]){
-
-		$infoProducto = $rutas[0];
-
-	}
-
+	if(is_array($rutaProductos)){
+		if($rutas[0] == $rutaProductos["ruta"]){
+			$infoProducto = $rutas[0];
+		}}
 	/*=============================================
 	LISTA BLANCA DE URL'S AMIGABLES
 	=============================================*/
