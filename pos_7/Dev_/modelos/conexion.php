@@ -2,11 +2,11 @@
 
 class Conexion{
 
-	public function conectar(){
+	static public function conectar(){
 		
-		$link = new PDO("mysql:host=localhost;dbname=zitadb_web",
+		$link = new PDO("mysql:host=localhost;dbname=pos_7",
 		"root",
-		"Outwor1d");
+		"");
 
 		$link->exec("set names utf8");
 
