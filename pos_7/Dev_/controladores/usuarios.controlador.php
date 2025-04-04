@@ -6,7 +6,7 @@ class ControladorUsuarios{
 	INGRESO DE USUARIO
 	=============================================*/
 
-	public function ctrIngresoUsuario(){
+	static public function ctrIngresoUsuario(){
 
 		if(isset($_POST["ingUsuario"])){
 
@@ -18,9 +18,14 @@ class ControladorUsuarios{
 				$item = "usuario";
 				$valor = $_POST["ingUsuario"];
 
+
 				$respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
 
-				if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
+				/*Para solucionar el error de "Trying to access array offset on value.." se realiza una comparacion primero de si la variable $respuesta es un array*/
+
+				if(is_array($respuesta)){
+					
+					if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $_POST["ingPassword"]){
 
 					$_SESSION["iniciarSesion"] = "ok";
 
@@ -30,7 +35,10 @@ class ControladorUsuarios{
 
 					</script>';
 
-				}else{
+					}
+				}
+				
+				else{
 
 					echo '<br><div class="alert alert-danger">Error al ingresar, vuelve a intentarlo</div>';
 
