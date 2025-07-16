@@ -68,7 +68,7 @@ CUERPO DOCUMENTO
 
   if(isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok"){
 
-   echo '<div class="wrapper">';
+    echo '<div class="wrapper">';
 
     /*=============================================
     CABEZOTE
@@ -120,7 +120,9 @@ CUERPO DOCUMENTO
 
     echo '</div>';
 
-  }else{
+  }
+  
+  else{
 
     include "modulos/login.php";
 

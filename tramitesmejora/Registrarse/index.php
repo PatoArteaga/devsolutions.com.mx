@@ -1,11 +1,10 @@
 <!doctype html>
-<!--[if lte IE 9]>     <html lang="en" class="no-focus lt-ie10 lt-ie10-msg"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en" class="no-focus"> <!--<![endif]-->
+<html lang="en" class="no-focus"> 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-        <title>Codebase - Bootstrap 4 Admin Template &amp; UI Framework</title>
+        <title>Registrarse | Tramites del Ayuntamiento de Zitácuaro</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -35,34 +34,89 @@
         <!-- END Stylesheets -->
     </head>
     <body>
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Codebase() -> uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-inverse'                           Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+        HEADER STYLE
+
+            ''                                          Classic Header style if no class is added
+            'page-header-modern'                        Modern Header style
+            'page-header-inverse'                       Dark themed Header (works only with classic Header style)
+            'page-header-glass'                         Light themed Header with transparency by default
+                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
+            'page-header-glass page-header-inverse'     Dark themed Header with transparency by default
+                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
         <div id="page-container" class="main-content-boxed">
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="bg-gd-emerald">
-                    <div class="hero-static content content-full bg-white invisible" data-toggle="appear">
-                        <!-- Header -->
-                        <div class="py-30 px-5 text-center">
-                            <a class="link-effect font-w700" href="index.html">
-                                <i class="si si-fire"></i>
-                                <span class="font-size-xl text-primary-dark">code</span><span class="font-size-xl">base</span>
-                            </a>
-                            <h1 class="h2 font-w700 mt-50 mb-10">Registrate  </h1>
-                            <h2 class="h4 font-w400 text-muted mb-0">Please add your details</h2>
+                <div class="bg-image" style="background-image: url('../public/assets/img/photos/bg4.jpg');">
+                    <div class="row mx-0 bg-earth-op">
+                        <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
+                            <div class="p-30 invisible" data-toggle="appear">
+                                <p class="font-size-h3 font-w600 text-white mb-5">
+                                    Ayuntamiento de Zitácuaro.
+                                </p>
+                             <!--    <p class="font-size-h5 text-white">
+                                    <i class="fa fa-angles-right"></i> Create your account today and receive 50% off.
+                                </p> -->
+                                <p class="font-italic text-white-op">
+                                    Copyright &copy; <span class="js-year-copy">2025</span>
+                                </p>
+                            </div>
                         </div>
-                        <!-- END Header -->
+                        <div class="hero-static col-md-6 col-xl-4 d-flex align-items-center bg-white">
+                            <div class="content content-full">
+                                <!-- Header -->
+                                <div class="px-30 py-10">
+                                    <a class="link-effect font-w700" href="index.html">
+                                        <i class="si si-fire"></i>
+                                        <span class="font-size-xl text-primary-dark">code</span><span class="font-size-xl">base</span>
+                                    </a>
+                                    <h1 class="h3 font-w700 mt-30 mb-10">Registro</h1>
+                                    <!-- <h2 class="h5 font-w400 text-muted mb-0"></h2> -->
+                                </div>
+                                <!-- END Header -->
 
-                        <!-- Sign Up Form -->
-                        <div class="row justify-content-center px-5">
-                            <div class="col-sm-8 col-md-6 col-xl-4">
+                                <!-- Sign Up Form -->
                                 <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                <form class="js-validation-signup" action="be_pages_auth_all.html" method="post">
+                                <form class="js-validation-signup px-30" action="be_pages_auth_all.html" method="post">
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
                                                 <input type="text" class="form-control" id="signup-username" name="signup-username">
-                                                <label for="signup-username">Username</label>
+                                                <label for="signup-username">Nombre y apellido</label>
                                             </div>
                                         </div>
                                     </div>
@@ -78,7 +132,7 @@
                                         <div class="col-12">
                                             <div class="form-material floating">
                                                 <input type="password" class="form-control" id="signup-password" name="signup-password">
-                                                <label for="signup-password">Password</label>
+                                                <label for="signup-password">Contraseña</label>
                                             </div>
                                         </div>
                                     </div>
@@ -86,43 +140,40 @@
                                         <div class="col-12">
                                             <div class="form-material floating">
                                                 <input type="password" class="form-control" id="signup-password-confirm" name="signup-password-confirm">
-                                                <label for="signup-password-confirm">Password Confirmation</label>
+                                                <label for="signup-password-confirm">Confirmar contraseña</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row text-center">
+                                    <div class="form-group row">
                                         <div class="col-12">
-                                            <label class="css-control css-control-primary css-checkbox">
-                                                <input type="checkbox" class="css-control-input" id="signup-terms" name="signup-terms">
-                                                <span class="css-control-indicator"></span>
-                                                I agree to Terms &amp; Conditions
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Acepto los terminos &amp; condiciones </span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="form-group row gutters-tiny">
-                                        <div class="col-12 mb-10">
-                                            <button type="submit" class="btn btn-block btn-hero btn-noborder btn-rounded btn-alt-success">
-                                                <i class="si si-user-follow mr-10"></i> Sign Up
-                                            </button>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="btn btn-block btn-noborder btn-rounded btn-alt-secondary" href="#" data-toggle="modal" data-target="#modal-terms">
-                                                <i class="si si-book-open text-muted mr-10"></i> Read Terms
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-success">
+                                            <i class="fa fa-plus mr-10"></i> Crear cuenta
+                                        </button>
+                                        <div class="mt-30">
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="#" data-toggle="modal" data-target="#modal-terms">
+                                                <i class="fa fa-book text-muted mr-5"></i> Lee los terminos
                                             </a>
-                                        </div>
-                                        <div class="col-6">
-                                            <a class="btn btn-block btn-noborder btn-rounded btn-alt-secondary" href="op_auth_signin.html">
-                                                <i class="si si-login text-muted mr-10"></i> Sign In
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../">
+                                                <i class="fa fa-user text-muted mr-5"></i> Iniciar Sesion
                                             </a>
                                         </div>
                                     </div>
                                 </form>
+                                <!-- END Sign Up Form -->
                             </div>
                         </div>
-                        <!-- END Sign Up Form -->
                     </div>
                 </div>
                 <!-- END Page Content -->
+
             </main>
             <!-- END Main Container -->
         </div>
@@ -134,7 +185,7 @@
                 <div class="modal-content">
                     <div class="block block-themed block-transparent mb-0">
                         <div class="block-header bg-primary-dark">
-                            <h3 class="block-title">Terms &amp; Conditions</h3>
+                            <h3 class="block-title">Terminos &amp; Condiciones</h3>
                             <div class="block-options">
                                 <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
                                     <i class="si si-close"></i>
@@ -142,7 +193,7 @@
                             </div>
                         </div>
                         <div class="block-content">
-                            <p>Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa, fusce ante convallis ante urna molestie vulputate bibendum tempus ante justo arcu erat accumsan adipiscing risus, libero condimentum venenatis sit nisl nisi ultricies sed, fames aliquet consectetur consequat nostra molestie neque nullam scelerisque neque commodo turpis quisque etiam egestas vulputate massa, curabitur tellus massa venenatis congue dolor enim integer luctus, nisi suscipit gravida fames quis vulputate nisi viverra luctus id leo dictum lorem, inceptos nibh orci.</p>
+                            <p>El Ayuntamientode Zitácuaro pone a su disposición ........</p>
                             <p>Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa, fusce ante convallis ante urna molestie vulputate bibendum tempus ante justo arcu erat accumsan adipiscing risus, libero condimentum venenatis sit nisl nisi ultricies sed, fames aliquet consectetur consequat nostra molestie neque nullam scelerisque neque commodo turpis quisque etiam egestas vulputate massa, curabitur tellus massa venenatis congue dolor enim integer luctus, nisi suscipit gravida fames quis vulputate nisi viverra luctus id leo dictum lorem, inceptos nibh orci.</p>
                             <p>Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa, fusce ante convallis ante urna molestie vulputate bibendum tempus ante justo arcu erat accumsan adipiscing risus, libero condimentum venenatis sit nisl nisi ultricies sed, fames aliquet consectetur consequat nostra molestie neque nullam scelerisque neque commodo turpis quisque etiam egestas vulputate massa, curabitur tellus massa venenatis congue dolor enim integer luctus, nisi suscipit gravida fames quis vulputate nisi viverra luctus id leo dictum lorem, inceptos nibh orci.</p>
                         </div>
@@ -157,6 +208,7 @@
             </div>
         </div>
         <!-- END Terms Modal -->
+
 
         <!-- Codebase Core JS -->
         <script src="../public/assets/js/core/jquery.min.js"></script>
@@ -174,5 +226,6 @@
 
         <!-- Page JS Code -->
         <script src="../public/assets/js/pages/op_auth_signup.js"></script>
+
     </body>
 </html>

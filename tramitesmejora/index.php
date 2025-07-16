@@ -37,7 +37,8 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="bg-image" style="background-image: url('public/assets/img/photos/photo34@2x.jpg');">
+                <!-- <div class="bg-image" style="background-image: url('public/assets/img/photos/photo34@2x.jpg');"> -->
+                <div class="bg-image" style="background-image: url('public/assets/img/photos/bg4.jpg');">
                     <div class="row mx-0 bg-black-op">
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
@@ -96,10 +97,10 @@
                                             <i class="si si-login mr-10"></i> Acceder
                                         </button>
                                         <div class="mt-30">
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="./Registrarse">
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="Registrarse">
                                                 <i class="fa fa-plus mr-5"></i> Crear cuenta
                                             </a>
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="op_auth_reminder2.html">
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="RecuperarContrasena">
                                                 <i class="fa fa-warning mr-5"></i> Olvide mi contraseña 
                                             </a>
                                         </div>

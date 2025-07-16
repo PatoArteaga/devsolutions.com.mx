@@ -43,20 +43,20 @@ var OpAuthSignUp = function() {
             },
             messages: {
                 'signup-username': {
-                    required: 'Please enter a username',
-                    minlength: 'Your username must consist of at least 3 characters'
+                    required: 'introduce un nombre de usuario',
+                    minlength: 'Tu usuario debe contener al menos 3 caracteres'
                 },
-                'signup-email': 'Please enter a valid email address',
+                'signup-email': 'Introduce un correo electronico valido',
                 'signup-password': {
-                    required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long'
+                    required: 'introduce una contraseña',
+                    minlength: 'Tu contraseña debe contener al menos 5 caracteres'
                 },
                 'signup-password-confirm': {
-                    required: 'Please provide a password',
-                    minlength: 'Your password must be at least 5 characters long',
-                    equalTo: 'Please enter the same password as above'
+                    required: 'introduce una contraseña',
+                    minlength: 'Tu contraseña debe contener al menos 5 caracteres',
+                    equalTo: 'Porfavor introduce la misma contraseña'
                 },
-                'signup-terms': 'You must agree to the service terms!'
+                'signup-terms': 'Debes aceptar los terminos!'
             }
         });
     };
