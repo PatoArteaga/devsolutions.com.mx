@@ -93,9 +93,9 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-primary">
+                                        <a class="btn btn-sm btn-hero btn-alt-primary" href="view/Home">
                                             <i class="si si-login mr-10"></i> Acceder
-                                        </button>
+                                        </a>
                                         <div class="mt-30">
                                             <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="Registrarse">
                                                 <i class="fa fa-plus mr-5"></i> Crear cuenta
