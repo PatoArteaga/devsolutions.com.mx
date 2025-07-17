@@ -101,9 +101,9 @@
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="index.html">
                                         <i class="si si-fire"></i>
-                                        <span class="font-size-xl text-primary-dark">code</span><span class="font-size-xl">base</span>
+                                        <span class="font-size-xl text-primary-dark">Ayuntamiento de</span><span class="font-size-xl"> Zitácuaro</span>
                                     </a>
-                                    <h1 class="h3 font-w700 mt-30 mb-10">Registro</h1>
+                                    <h1 class="h3 font-w700 mt-30 mb-10">Crear Cuenta</h1>
                                     <!-- <h2 class="h5 font-w400 text-muted mb-0"></h2> -->
                                 </div>
                                 <!-- END Header -->

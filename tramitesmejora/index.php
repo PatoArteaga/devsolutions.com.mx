@@ -58,8 +58,8 @@
                                         <i class="si si-fire"></i>
                                         <span class="font-size-xl text-primary-dark">Ayuntamiento de</span><span class="font-size-xl"> Zitácuaro</span>
                                     </a>
-                                  <!--   <h1 class="h3 font-w700 mt-30 mb-10">Bienvenido al sitio de Tramites en Línea</h1> -->
-                                    <h2 class="h5 font-w400 text-muted mb-0">Inicia sesión</h2>
+                                    <h1 class="h3 font-w700 mt-30 mb-10">Inicia sesión</h1>
+                                    <!-- <h2 class="h5 font-w400 text-muted mb-0">Inicia sesión</h2> -->
                                 </div>
                                 <!-- END Header -->
 
