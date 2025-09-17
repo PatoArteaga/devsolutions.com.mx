@@ -3,14 +3,15 @@
         <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Dashboard</span>
         </li>
 
-        <li class="">
+        <li class="open">
             <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-lock"></i><span class="sidebar-mini-hide">Usuarios</span></a>
+
             <ul>
                 <li>
-                    <a class="active" href="be_pages_dashboard.html">Crear Usuario</a>
+                    <a href="../NuevousUario/">Nuevo Usuario</a>
                 </li>
                 <li>
-                    <a href="be_pages_dashboard2.html">Consulta Usuario</a>
+                    <a href="../ConsultaUsuario/">Consulta Usuario</a>
                 </li>
             </ul>
         </li>

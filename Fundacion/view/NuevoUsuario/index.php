@@ -8,7 +8,7 @@
 <!doctype html>
     <head>
         <?php require_once("../MainHead/MainHead.php"); ?>        
-        <title>Consultar Status &amp; UI Framework DevSolutions.</title>
+        <title>Nuevo Usuario &amp; UI Framework DevSolutions.</title>
     </head>
     
     <body>
