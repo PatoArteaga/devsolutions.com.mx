@@ -3,15 +3,15 @@
         <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Dashboard</span>
         </li>
 
-        <li class="open">
+        <li class="">
             <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-lock"></i><span class="sidebar-mini-hide">Usuarios</span></a>
 
             <ul>
                 <li>
-                    <a href="../NuevousUario/">Nuevo Usuario</a>
+                    <a href="../NuevoUsuario/#NUsuarios">Nuevo Usuario</a>
                 </li>
                 <li>
-                    <a href="../ConsultaUsuario/">Consulta Usuario</a>
+                    <a href="../ConsultaUsuario/#CUsuarios">Consulta Usuario</a>
                 </li>
             </ul>
         </li>
@@ -39,27 +39,28 @@
                 </li>
             </ul>
         </li>
+
         <li class="">
-            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">Afiliados</span></a>
+            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">Promovidos</span></a>
             <ul>
                 <li > <!-- style="pointer-events: none;" -->
-                    <a href="be_pages_dashboard2.html">Crear Afiliado</a>
+                    <a href="../NuevoPromovido">Nuevo Promovido</a>
                 </li>
                 <li>
-                    <a href="be_pages_dashboard2.html">Consulta Afiliado</a>
+                    <a href="../ConsultaPromovidos/#CPromovidos">Consulta Promovidos</a>
                 </li>
             </ul>
         </li>
 
         <?php 
-        if($_SESSION['tipo']=='1')
+        if($_SESSION['tipo']=='0')
             {
             echo "  
-        <li class=''>
+        <li class='open'>
             <a class='nav-submenu' data-toggle='nav-submenu' href='#'><i class='si si-trophy'></i><span class='sidebar-mini-hide'>Metas</span></a>
             <ul>
                 <li > <!-- style='pointer-events: none;' -->
-                    <a href='be_pages_dashboard2.html'>Crear Campaña</a>
+                    <a href='be_pages_dashboard2.html'>Crear Meta</a>
                 </li>
                 <li>
                     <a href='be_pages_dashboard2.html'>Consulta Avance</a>

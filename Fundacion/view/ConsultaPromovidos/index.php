@@ -6,7 +6,7 @@
 <!doctype html>
     <head>
         <?php require_once("../MainHead/MainHead.php"); ?>   
-        <title>Consulta Usuario &amp; UI Framework DevSolutions.</title>
+        <title>Consulta Promovidos &amp; UI Framework DevSolutions.</title>
     </head>
     
     <body>
@@ -39,18 +39,19 @@
                 <div class="content">
                     <div class="block">
                         <div class="block-header block-header-default">
-                            <h3 class="block-title" id="CUsuarios">Usuarios: <small>Consulta</small></h3>
+                            <h3 class="block-title" id="CPromovidos">Promovidos: <small>Consulta</small></h3>
                         </div>
+
                         <div class="block-content block-content-full">
                             <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/be_tables_datatables.js -->
                             <table class="table table-bordered table-striped table-vcenter js-dataTable-full">
                                 <thead>
                                     <tr>
                                         <th class="text-center"></th>
-                                        <th>Name</th>
-                                        <th class="d-none d-sm-table-cell">Email</th>
-                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Access</th>
-                                        <th class="text-center" style="width: 15%;">Profile</th>
+                                        <th>Nombre</th>
+                                        <th class="d-none d-sm-table-cell">email</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Afiliado</th>
+                                        <th class="text-center" style="width: 15%;">Promovido</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -317,6 +318,15 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <div class="form-group row">
+                            <div class="col-lg-8 ml-auto">
+                                <button type="button" class="btn btn-success mr-5 mb-5">
+                                    <i class="fa fa-download mr-5"></i>Descargar Excell
+                                </button>
+                            </div>
+                        </div>
+
                     </div>            
                 </div>
             </main>

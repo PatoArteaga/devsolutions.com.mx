@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-        <title>Recuperar Contraseña &amp; UI Framework</title>
+       <title>Recuperar Contraseña | Sistema de Captura &amp; UI Framework DevSolutions.</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -43,7 +43,7 @@
                         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
                             <div class="p-30 invisible" data-toggle="appear">
                                 <p class="font-size-h3 font-w600 text-white">
-                                    Ayuntamiento de Zitácuaro.
+                                    Municipio de Zitácuaro.
                                 </p>
                                 <p class="font-italic text-white-op">
                                     Copyright &copy; <span class="js-year-copy">2025</span>
@@ -56,7 +56,7 @@
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="index.html">
                                         <i class="si si-fire"></i>
-                                        <span class="font-size-xl text-primary-dark">Ayuntamiento de</span><span class="font-size-xl"> Zitácuaro</span>
+                                        <span class="font-size-xl text-primary-dark">Dev-</span><span class="font-size-xl">Solutions.</span>
                                     </a>
                                   <!--   <h1 class="h3 font-w700 mt-30 mb-10">Bienvenido al sitio de Tramites en Línea</h1> -->
                                 <h1 class="h3 font-w700 mt-30 mb-10">Recuperar contraseña </h1>
@@ -67,7 +67,7 @@
                                 <!-- Sign In Form -->
                                 <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/op_auth_signin.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                <form class="js-validation-signin px-30" action="be_pages_auth_all.html" method="post">
+                                <form class="js-validation-signin px-30" action="../" method="post">
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">

@@ -14,3 +14,4 @@
 
 <!-- Page JS Code -->
 <script src="../../public/assets/js/pages/be_tables_datatables.js"></script>
+
