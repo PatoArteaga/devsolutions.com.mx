@@ -3,23 +3,23 @@
         <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">Dashboard</span>
         </li>
 
-        <li class="">
+        <li class="" id="label-Musuarios">
             <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-lock"></i><span class="sidebar-mini-hide">Usuarios</span></a>
 
             <ul>
                 <li>
-                    <a href="../NuevoUsuario/#NUsuarios">Nuevo Usuario</a>
+                    <a id="label-NU" href="../NuevoUsuario/#NUsuarios">Nuevo Usuario</a>
                 </li>
                 <li>
-                    <a href="../ConsultaUsuario/#CUsuarios">Consulta Usuario</a>
+                    <a id="label-CU" href="../ConsultaUsuario/#CUsuarios">Consulta Usuario</a>
                 </li>
             </ul>
         </li>
         
         <li class="">
-            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-compass"></i><span class="sidebar-mini-hide">Ubicaciones</span></a>
-            <ul>
-                <li > <!-- style="pointer-events: none;" -->
+            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-compass"></i><span class="sidebar-mini-hide">Secciones</span></a>
+            <!-- <ul>
+                <li style="pointer-events: none;">
                     <a href="be_pages_dashboard2.html">Crear Pais</a>
                 </li>
                 <li>
@@ -37,7 +37,7 @@
                 <li>
                     <a href="be_pages_dashboard2.html">Consulta Municipio</a>
                 </li>
-            </ul>
+            </ul> -->
         </li>
 
         <li class="">
@@ -50,25 +50,22 @@
                     <a href="../ConsultaPromovidos/#CPromovidos">Consulta Promovidos</a>
                 </li>
             </ul>
-        </li>
-
-        <?php 
-        if($_SESSION['tipo']=='0')
-            {
-            echo "  
-        <li class='open'>
-            <a class='nav-submenu' data-toggle='nav-submenu' href='#'><i class='si si-trophy'></i><span class='sidebar-mini-hide'>Metas</span></a>
+        </li>   
+            
+            
+        <li id='label-Mmetas' class="">
+            <a  class='nav-submenu' data-toggle='nav-submenu' href='#'><i class='si si-trophy'></i><span class='sidebar-mini-hide'>Metas</span></a>
             <ul>
-                <li > <!-- style='pointer-events: none;' -->
-                    <a href='be_pages_dashboard2.html'>Crear Meta</a>
+                <li> 
+                    <a id='label-NM' href='../NuevaMeta/'>Nueva Meta</a>
                 </li>
                 <li>
-                    <a href='be_pages_dashboard2.html'>Consulta Avance</a>
+                    <a id='label-CM' href='../ConsultaMetas/'>Consulta Metas</a>
                 </li>
             </ul>
         </li>";
-            }
-        ?>
+            
+        
 
       
        

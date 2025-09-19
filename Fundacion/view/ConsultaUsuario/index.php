@@ -27,7 +27,22 @@
                 Adding .sidebar-mini-visible to an element will show it only when the sidebar is in mini mode
                     - use .sidebar-mini-visible-b if you would like to be a block when visible (display: block)
             -->
-            <?php require_once("../MainSidebar/MainSidebar.php"); ?>
+            <?php require_once("../MainSidebar/MainSidebar.php"); 
+  /*         $dom = new DOMDocument();
+            $link = $dom->getElementById('label-NU')->item(1);
+
+            if ($link) {
+                $link->setAttribute("class", "active"); 
+                }
+
+            
+            $link->saveHTML();
+          //  echo $link;*/
+
+
+
+
+            ?>
             <!-- END Sidebar -->
 
             <!-- Header -->
@@ -330,7 +345,14 @@
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-      <?php require_once("../MainJs/MainJs.php"); ?>           
+      <?php require_once("../MainJs/MainJs.php"); ?> 
+      <script src="consultausuario.js"></script>
+      
+
+<script >
+        
+</script>
+
 
     </body>
 </html>

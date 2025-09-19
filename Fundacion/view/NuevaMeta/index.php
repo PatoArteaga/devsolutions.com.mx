@@ -39,7 +39,7 @@
                     
                     <div class="block">
                         <div class="block-header block-header-default">
-                            <h3 class="block-title" id="NUsuarios" >Usuarios: <small>Nuevo</small></h3>
+                            <h3 class="block-title" id="NUsuarios" >Metas: <small>Nuevo</small></h3>
                         </div>
                         <div class="block-header block-header-default">
                             <!-- <div class="block-options">
@@ -130,7 +130,7 @@
 
         <!-- Codebase Core JS -->
       <?php require_once("../MainJs/MainJs.php"); ?>
-      <script src="nuevousuario.js"></script>
+      <script src="nuevameta.js"></script>
 
     </body>
 </html>
