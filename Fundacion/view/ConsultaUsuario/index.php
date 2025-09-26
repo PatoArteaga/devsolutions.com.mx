@@ -64,21 +64,27 @@
                                         <th class="text-center"></th>
                                         <th>Name</th>
                                         <th class="d-none d-sm-table-cell">Email</th>
-                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Access</th>
-                                        <th class="text-center" style="width: 15%;">Profile</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Acceso</th>
+                                        <th class="text-center" style="width: 15%;">Perfil</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="text-center">1</td>
-                                        <td class="font-w600">Barbara Scott</td>
+                                        <td class="font-w600">Larry Arteaga</td>
                                         <td class="d-none d-sm-table-cell">customer1@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Administrador">
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Coordinador">
+                                                <i class="fa fa-area-chart"></i> 
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -87,11 +93,14 @@
                                         <td class="font-w600">Laura Carr</td>
                                         <td class="d-none d-sm-table-cell">customer2@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-success">VIP</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                                <i class="fa fa-area-chart"></i> 
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -100,11 +109,11 @@
                                         <td class="font-w600">Melissa Rice</td>
                                         <td class="d-none d-sm-table-cell">customer3@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-danger">Deshabilitado</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -113,12 +122,18 @@
                                         <td class="font-w600">Susan Day</td>
                                         <td class="d-none d-sm-table-cell">customer4@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Administrador">
+                                                <i class="fa fa-cog" aria-hidden="true"></i>
                                             </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Coordinador">
+                                                <i class="fa fa-area-chart"></i> 
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
+                                            </button>  
                                         </td>
                                     </tr>
                                     <tr>
@@ -126,11 +141,14 @@
                                         <td class="font-w600">Sara Fields</td>
                                         <td class="d-none d-sm-table-cell">customer5@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Coordinador">
+                                                <i class="fa fa-area-chart"></i> 
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -139,11 +157,14 @@
                                         <td class="font-w600">Carl Wells</td>
                                         <td class="d-none d-sm-table-cell">customer6@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Coordinador">
+                                                <i class="fa fa-area-chart"></i> 
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -152,11 +173,11 @@
                                         <td class="font-w600">Lori Moore</td>
                                         <td class="d-none d-sm-table-cell">customer7@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -168,8 +189,8 @@
                                             <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -181,8 +202,8 @@
                                             <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -191,11 +212,11 @@
                                         <td class="font-w600">Sara Fields</td>
                                         <td class="d-none d-sm-table-cell">customer10@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
+                                            <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -207,8 +228,8 @@
                                             <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -217,11 +238,11 @@
                                         <td class="font-w600">Brian Cruz</td>
                                         <td class="d-none d-sm-table-cell">customer12@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-primary">Personal</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -233,8 +254,8 @@
                                             <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -243,11 +264,11 @@
                                         <td class="font-w600">Lori Grant</td>
                                         <td class="d-none d-sm-table-cell">customer14@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -256,11 +277,11 @@
                                         <td class="font-w600">Danielle Jones</td>
                                         <td class="d-none d-sm-table-cell">customer15@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-success">VIP</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -269,11 +290,11 @@
                                         <td class="font-w600">Carol Ray</td>
                                         <td class="d-none d-sm-table-cell">customer16@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -282,11 +303,11 @@
                                         <td class="font-w600">Judy Ford</td>
                                         <td class="d-none d-sm-table-cell">customer17@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -295,11 +316,11 @@
                                         <td class="font-w600">David Fuller</td>
                                         <td class="d-none d-sm-table-cell">customer18@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-primary">Personal</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -308,11 +329,11 @@
                                         <td class="font-w600">Lori Moore</td>
                                         <td class="d-none d-sm-table-cell">customer19@example.com</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
+                                            <span class="badge badge-success">Activo</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -324,8 +345,8 @@
                                             <span class="badge badge-danger">Disabled</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
+                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Lider">
+                                                <i class="fa fa-address-card-o"></i>
                                             </button>
                                         </td>
                                     </tr>

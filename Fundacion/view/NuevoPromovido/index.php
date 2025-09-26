@@ -102,7 +102,8 @@
                                             <label class="col-lg-4 col-form-label" for="val-suggestions">Fotos <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
                                                 <label for="formFile" class="form-label">Seleccionar foto desde la cámara</label>
-                                                <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*">
+                                                <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
+                                                <input type="file" class="nuevaFoto" name="nuevaFoto">
                                                 
                                                <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->   
                                                                                             
