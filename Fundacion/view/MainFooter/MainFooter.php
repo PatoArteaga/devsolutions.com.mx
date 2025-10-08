@@ -2,7 +2,7 @@
 <footer id="page-footer" class="opacity-0">
         <div class="content py-20 font-size-xs clearfix">
             <div class="float-right">
-            in association with <i class="fa fa-heart text-pulse"></i> by <a class="font-w600" href="http://goo.gl/vNS3I" target="_blank">
+            in association with <i class="fa fa-heart text-pulse"></i><a class="font-w600" href="http://devsolutions.com.mx" target="_blank">
                     Dev#Solutions</a>
         </div>
         <div class="float-left">
