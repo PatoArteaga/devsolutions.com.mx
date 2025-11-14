@@ -14,6 +14,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">        
 <link rel="stylesheet" id="css-main" href="../../public/assets/css/codebase.min.css">
 
+
+<!-- Stylos para las tablas --> 
 <link rel="stylesheet" href="../../public/assets/js/plugins/datatables/dataTables.bootstrap4.min.css">
 
 <link rel="stylesheet" id="css-main" href="../../public/assets/css/codebase.min.css">

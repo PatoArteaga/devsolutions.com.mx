@@ -8,10 +8,10 @@
 <script src="../../public/assets/js/core/js.cookie.min.js"></script>
 <script src="../../public/assets/js/codebase.js"></script>
 
- <!-- Page JS Plugins -->
+ <!-- Page JS Plugins Plugins para busqueda y agrupacion de las tablas-->
 <script src="../../public/assets/js/pages/jquery.dataTables.min.js"></script>
 <script src="../../public/assets/js/pages/dataTables.bootstrap4.min.js"></script>
 
-<!-- Page JS Code -->
+<!-- Page JS Code Plugins para busqueda y agrupacion de las tablas -->
 <script src="../../public/assets/js/pages/be_tables_datatables.js"></script>
 
