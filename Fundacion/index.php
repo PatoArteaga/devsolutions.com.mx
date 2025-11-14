@@ -1,6 +1,19 @@
+<?php
+require_once("config/conection.php");
+if(isset($_POST["enviar"]) and $_POST["enviar"]=="si")
+{
+    require_once("model/Usuario.php");
+    $usuario=new Usuario();
+    $usuario->login();
+}
+
+
+?>
+
+
+
 <!doctype html>
-<!--[if lte IE 9]>     <html lang="en" class="no-focus lt-ie10 lt-ie10-msg"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en" class="no-focus"> <!--<![endif]-->
+<html lang="en" class="no-focus"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
