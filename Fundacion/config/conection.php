@@ -1,12 +1,13 @@
 <?php
 class conectar{
-    protect $dbh;
+    protected $dbh;
 
-    protect function conexion(){
+    protected function conexion(){
         try {
-            $conectar=$this->dbh=new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","");
+            $conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","");
             return $conectar;
-        } catch (Exception $e) {
+        } 
+        catch (Exception $e) {
             print "Error de conexion a la bd".$e->getMessage()."<br>";
             die();
         }
@@ -17,7 +18,7 @@ class conectar{
     }
 
     public function ruta(){
-        return "http://localhost/devsolutions.com.mx/fundacion/";
+        return "http://localhost:8888/devsolutions.com.mx/fundacion/";
     }
 }
 ?>

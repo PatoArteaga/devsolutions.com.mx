@@ -40,14 +40,14 @@
             </ul> -->
         </li>
 
-        <li class="">
+        <li id='label-Promovidos' class="">
             <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">Promovidos</span></a>
             <ul>
                 <li > <!-- style="pointer-events: none;" -->
-                    <a href="../NuevoPromovido">Nuevo Promovido</a>
+                    <a id='label-NP' href="../NuevoPromovido">Nuevo Promovido</a>
                 </li>
                 <li>
-                    <a href="../ConsultaPromovidos/#CPromovidos">Consulta Promovidos</a>
+                    <a id='label-CP' href="../ConsultaPromovidos/#CPromovidos">Consulta Promovidos</a>
                 </li>
             </ul>
         </li>   

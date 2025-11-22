@@ -1,12 +1,11 @@
 <?php
 require_once("config/conection.php");
-if(isset($_POST["enviar"]) and $_POST["enviar"]=="si")
-{
+
+if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
     require_once("model/Usuario.php");
     $usuario=new Usuario();
     $usuario->login();
 }
-
 
 ?>
 
@@ -83,15 +82,15 @@ if(isset($_POST["enviar"]) and $_POST["enviar"]=="si")
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="text" class="form-control" id="login-username" name="login-username">
-                                                <label for="login-username">Correo electrónico:</label>
+                                                <input type="text" class="form-control" id="login-usuario" name="usuario">
+                                                <label for="login-username">Usuario:</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="password" class="form-control" id="login-password" name="login-password">
+                                                <input type="password" class="form-control" id="login-password" name="password">
                                                 <label for="login-password">Contraseña:</label>
                                             </div>
                                         </div>

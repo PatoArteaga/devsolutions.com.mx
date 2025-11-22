@@ -153,7 +153,7 @@
 
         <!-- Codebase Core JS -->
       <?php require_once("../MainJs/MainJs.php"); ?>
-      <script src="nuevousuario.js"></script>
+      <script src="nuevopromovido.js"></script>
 
     </body>
 </html>

@@ -1,8 +1,8 @@
 <?php
 class Usuario extends conectar{
 
-    
     public function login(){
+
         $conectar=parent::conexion();
         parent::set_names();
         if(isset($_POST["enviar"]))
@@ -26,16 +26,18 @@ class Usuario extends conectar{
 
                     if(is_array($resultado) and count($resultado)>0)
                     {
-                        $_SESSION["id"]=$resultado["id"];
+                        $_SESSION["id_usuario"]=$resultado["id_usuario"];
                         $_SESSION["usuario"]=$resultado["usuario"];
                         $_SESSION["nombre"]=$resultado["nombre"];
                         $_SESSION["apellido"]=$resultado["apellido"];
                         $_SESSION["email"]=$resultado["email"];
+                        $_SESSION["pass"]=$resultado["pass"];
                         $_SESSION["f_creacion"]=$resultado["f_creacion"];
                         $_SESSION["f_modificacion"]=$resultado["f_modificacion"];
                         $_SESSION["f_eliminacion"]=$resultado["f_eliminacion"];
-                        $_SESSION["estatus"]=$resultado["estatus"];
                         $_SESSION["img"]=$resultado["img"];
+                        $_SESSION["nivel"]=$resultado["niveel"];
+                        $_SESSION["estatus"]=$resultado["estatus"];
                         header("Location:".conectar::ruta()."view/Home/");
                         exit();
                     }

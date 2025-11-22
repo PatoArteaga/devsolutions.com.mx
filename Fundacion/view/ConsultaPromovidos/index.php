@@ -340,7 +340,8 @@
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-      <?php require_once("../MainJs/MainJs.php"); ?>           
+      <?php require_once("../MainJs/MainJs.php"); ?>
+      <script src="consultapromovidos.js"></script>        
 
     </body>
 </html>
