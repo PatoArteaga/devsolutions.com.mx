@@ -10,8 +10,8 @@ class Usuario extends conectar{
         parent::set_names();
         if(isset($_POST["enviar"]))
             {
-                $password=$_POST["password"];
-                $usuario=$_POST["usuario"];
+                $password=$_POST["login-password"];
+                $usuario=$_POST["login-user"];
 
                 if(empty($usuario) and empty($password))
                 {

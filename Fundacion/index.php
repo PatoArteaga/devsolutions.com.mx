@@ -70,7 +70,7 @@ if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="index.html">
                                         <i class="si si-fire"></i>
-                                        <span class="font-size-xl text-primary-dark">Dev-</span><span class="font-size-xl">Solutions.</span>
+                                        <span class="font-size-xl text-primary-dark">Dev</span><span class="font-size-xl">Solutions.</span>
                                     </a>
                                     <h1 class="h3 font-w700 mt-30 mb-10">Inicia sesión</h1>
                                     <!-- <h2 class="h5 font-w400 text-muted mb-0">Inicia sesión</h2> -->

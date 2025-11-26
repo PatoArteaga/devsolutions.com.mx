@@ -56,7 +56,7 @@
                                 <div class="px-30 py-10">
                                     <a class="link-effect font-w700" href="index.html">
                                         <i class="si si-fire"></i>
-                                        <span class="font-size-xl text-primary-dark">Dev-</span><span class="font-size-xl">Solutions.</span>
+                                        <span class="font-size-xl text-primary-dark">Dev</span><span class="font-size-xl">Solutions.</span>
                                     </a>
                                   <!--   <h1 class="h3 font-w700 mt-30 mb-10">Bienvenido al sitio de Tramites en Línea</h1> -->
                                 <h1 class="h3 font-w700 mt-30 mb-10">Recuperar contraseña </h1>

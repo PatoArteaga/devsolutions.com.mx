@@ -16,7 +16,7 @@
                     <a class="img-link mr-5" href="be_pages_generic_profile.html">
                         <img class="img-avatar img-avatar32" src="../../public/assets/img/avatars/avatar15.jpg" alt="">
                     </a>
-                    <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html"><?php echo $_SESSION['nombre_usuario']; ?></a>
+                    <a class="align-middle link-effect text-primary-dark font-w600" href="be_pages_generic_profile.html"><?php /* echo strtoupper($_SESSION['nombreddd']);  */?></a>
                 </div>
                 <!-- END User Info -->
             </div>
