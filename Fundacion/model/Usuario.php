@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
 class Usuario extends conectar{
 
     public function login(){
@@ -36,7 +39,7 @@ class Usuario extends conectar{
                         $_SESSION["f_modificacion"]=$resultado["f_modificacion"];
                         $_SESSION["f_eliminacion"]=$resultado["f_eliminacion"];
                         $_SESSION["img"]=$resultado["img"];
-                        $_SESSION["nivel"]=$resultado["niveel"];
+                        $_SESSION["nivel"]=$resultado["nivel"];
                         $_SESSION["estatus"]=$resultado["estatus"];
                         header("Location:".conectar::ruta()."view/Home/");
                         exit();

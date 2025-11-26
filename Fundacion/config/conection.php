@@ -1,7 +1,8 @@
 <?php
-class conectar{
-    protected $dbh;
 
+
+class Conectar{
+    protected $dbh;
     protected function conexion(){
         try {
             $conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","");
