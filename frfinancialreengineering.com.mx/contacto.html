@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contáctanos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- iconos -->
+  <link href="assets/img/FR.png" rel="icon">
+  <link href="assets/img/FR.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- archivos css -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript">
+    function showContent() {
+        element = document.getElementById("content");
+        check = document.getElementById("check");
+        if (check.checked) {
+            element.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+    }
+</script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/FR.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="firma.html">Nuestra Firma</a></li>
+          <li><a href="areasdecompetencia.html">Áreas de competencia</a></li>
+          <li><a href="reloj.html">Soluciones</a></li>
+          <li><a class="active" href="contacto.html">Contáctanos</a></li>
+          <li><a href="reloj.html">Login in</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======= Seccion breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <div id="container">
+            <p><a href=""></a></p>
+            <p><a href=""></a></p>
+          <p><a href="#">
+            Contáctanos
+          </a></p></div>
+          <ol>
+            <li>Ninguna empresa puede tener éxito sin estar debidamente organizada.</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Seccion de contactanos ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Nuestra dirección</h3>
+                  <p>Sagitario #4998, Col: La Calma, Zapopan, Jalisco, México.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email</h3>
+                  <p>soporte@frfinancialreengineering.com.mx<br>direccion@frfinancialreengineering.com.mx</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Teléfonos</h3>
+                  <p>+52 33-2807-7234<br>+52 33-1702-0880</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre Completo" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje se ha enviado con éxito.</div>
+              </div>
+              <input type="checkbox" name="check" id="check" value="1" onchange="javascript:showContent()" /> Acepto<a style="color: yellow;" href="privacidad.html"> términos y condiciones.</a>
+              <div id="content" style="display: none;">
+                <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+              </div>
+              
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Seccion del maps ======= -->
+    <section class="map mt-2">
+      <div class="container-fluid p-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.800461429761!2d-103.4152328!3d20.6369886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ac481fe9e635%3A0x7fcdbabbc996aea1!2sC.%20Sagitario%203607A%2C%20La%20Calma%2C%2045080%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1734027043624!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Pie de pagina ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Inscríbete a nuestro Newsletter</h4>
+            <p>Recibe revistas, comunicados y noticias del momento.</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribete">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+      
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Aviso legal y privacidad.</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i><a href="privacidad.html">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contáctanos.</h4>
+            <p>
+              Calle: Sagitario #4998.<br>
+              Col: La Calma<br>
+              Zapopan, Jalisco, México.<br><br>
+              <strong>Tel:</strong> +52 33-2807-7234<br>
+              <strong>Tel:</strong> +52 33-1702-0880<br>
+              <strong>Email:</strong> soporte@frfinancialreengineering.com.mx
+              <strong>Email:</strong> direccion@frfinancialreengineering.com.mx
+            </p>
+          </div>
+          
+          
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Financial <span>Reengineering</span></h3>
+            <p>Comprometidos a mejorar los procesos de su empresa.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.facebook.com/profile.php?id=100069847695042" target="_black" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/frfinancialreengineering/" target="_black" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://wa.link/9dvo67" target="_black" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/fr-financial-reengineering-7247a1217/" target="_black" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Financial Reengineering</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Archivos JS -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

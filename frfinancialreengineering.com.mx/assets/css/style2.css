@@ -1,0 +1,87 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: url("../img/princi.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(34, 34, 34, 0.8);
+}
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.reloj {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  /* countdown */
+}
+.reloj h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+.reloj h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+.reloj .countdown {
+  margin-bottom: 80px;
+}
+.reloj .countdown div {
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.12);
+  border-top: 5px solid #fde200;
+}
+.reloj .countdown div h3 {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+.reloj .countdown div h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 575px) {
+  .reloj .countdown div {
+    width: 70px;
+    padding: 10px 0;
+    margin: 10px 8px;
+  }
+  .reloj .countdown div h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .reloj .countdown div h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
