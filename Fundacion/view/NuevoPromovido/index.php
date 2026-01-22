@@ -74,23 +74,29 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-username">Dirección <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="val-Direccion" name="val-Direccion" placeholder="Introduce tu dirección..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Telefono (Celular) <span class="text-danger">*</span></label>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="715 134 ...." required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-email">Email <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
                                                 <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Introduce tu email..">
                                             </div>
                                         </div>
 
-                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-select2">Nivel de Usuario <span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <select class="js-select2 form-control" id="val-select2" name="val-select2" style="width: 100%;" data-placeholder="Choose one..">
-                                                    <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
-                                                    <option value="0">0-Administrador</option>
-                                                    <option value="1">1-Yesenia</option>
-                                                    <option value="2">2-Larry Arteaga</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        
+
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-suggestions">Comentarios <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
@@ -99,32 +105,38 @@
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Fotos <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Ine<span class="text-danger">*</span></label>
+                                            
                                             <div class="col-lg-8">
-                                                <label for="formFile" class="form-label">Seleccionar foto desde la cámara</label>
+                                                <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
                                                 <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
-                                                <input type="file" class="nuevaFoto" name="nuevaFoto">
-                                                
-                                               <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->   
-                                                                                            
+                                                <input type="file" class="" name="nuevaFoto">
+                                               <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->      
                                             </div>                                            
                                         </div>
 
-<!--                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Fotos <span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <label for="formFile" class="form-label">Seleccionar foto desde la galeria</label>
-                                                <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*">                                    
-                                            </div>                                            
-                                        </div> -->
-                                        
-                                        
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Telefono (Celular) <span class="text-danger">*</span></label>
-                                            <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="715 134 ...." required>
-                                            </div>
+                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Ine reverso<span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
+                                                <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
+                                                <input type="file" class="nuevaFoto" name="nuevaFoto2">
+                                               <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->      
+                                            </div>                                            
                                         </div>
+
+
+
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Comprobante de Doomicilio<span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
+                                                <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
+                                                <input type="file" class="" name="nuevaComprobante">
+                                               <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->      
+                                            </div>                                            
+                                        </div>
+
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
                                                 <button type="submit" class="btn btn-alt-primary">Registrar</button>

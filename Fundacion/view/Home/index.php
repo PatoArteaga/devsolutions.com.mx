@@ -2,8 +2,8 @@
     session_start(); // Inicia o reanuda la sesión
     $_SESSION['nombre_usuario'] = 'Larry Arteaga'; // Asigna un valor a la sesión
     $_SESSION['tipo'] = '0';
-    $numero1;
-    $numero2;
+    // $numero1;
+   // $numero2;
     $resultado;
     
     ?>

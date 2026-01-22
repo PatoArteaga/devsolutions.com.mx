@@ -3,7 +3,7 @@
         const servidor="localhost";
         const user="root";
         //const password="";
-        const password="";
+        const password="root";
         const db="proyecto_mvc";   
         const dsn="mysql:host=".self::servidor.";dbname=".self::db.";charset=UTF8";
         const conexion="";
