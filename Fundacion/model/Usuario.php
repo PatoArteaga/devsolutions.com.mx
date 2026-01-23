@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-
 class Usuario extends conectar{
 
     public function login(){
-
-        $conectar=parent::conexion();
+    
+    $conectar=parent::conexion();
         parent::set_names();
         if(isset($_POST["enviar"]))
             {

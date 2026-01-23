@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 class Conectar{
     protected $dbh;
@@ -18,7 +18,7 @@ class Conectar{
         return $this->dbh->query("SET NAMES 'utf8'");
     }
 
-    public function ruta(){
+    public static function ruta(){
         return "http://localhost:8888/devsolutions.com.mx/fundacion/";
     }
 

@@ -1,9 +1,8 @@
 <?php
-    session_start(); // Inicia o reanuda la sesión
-    $_SESSION['nombre_usuario'] = 'Larry Arteaga'; // Asigna un valor a la sesión
-    $_SESSION['tipo'] = '1';
-    ?>
-
+require_once("../../config/conection.php");
+    if(isset($_SESSION["id_usuario"]))
+        {
+?>
 
 <!doctype html>
     <head>
@@ -58,3 +57,11 @@
 
     </body>
 </html>
+
+<?php
+}else
+{
+    header("Location:".Conectar::ruta()."index.php");
+    exit();
+}
+?>

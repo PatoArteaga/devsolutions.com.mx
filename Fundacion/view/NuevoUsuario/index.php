@@ -1,5 +1,9 @@
 <?php
-    session_start();?>
+require_once("../../config/conection.php");
+    if(isset($_SESSION["id_usuario"]))
+        {
+?>
+
 
 <!doctype html>
     <head>
@@ -133,3 +137,11 @@
 
     </body>
 </html>
+
+<?php
+}else
+{
+    header("Location:".Conectar::ruta()."index.php");
+    exit();
+}
+?>

@@ -96,6 +96,10 @@
         <!-- Right Section -->
         <div class="content-header-section">
             <!-- User Dropdown -->
+
+            <!-- ID del Usuario useridx-->
+            <input type="hidden" id="useridx" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
+
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <?php echo strtoupper($_SESSION['nombre']);                    
@@ -120,7 +124,7 @@
                     <!-- END Side Overlay -->
 
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="op_auth_signin.html">
+                    <a class="dropdown-item" href="../LogOut/">
                         <i class="si si-logout mr-5"></i> Cerrar Sesion
                     </a>
                 </div>

@@ -114,8 +114,8 @@ if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
                                 <!-- Sign In Form -->
                                 <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/op_auth_signin.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                <div class="js-validation-signin px-30" action="be_pages_auth_all.html" method="post">
-                                    <form action="" method="post"  id="login-num1">
+<!--                                 <div class="js-validation-signin px-30" action="be_pages_auth_all.html" method="post">
+ -->                                    <form action="" method="post"  id="login-num1">
                                         
                                         <div class="form-group row">
                                             <div class="col-12">
@@ -146,7 +146,9 @@ if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
                                         </div>
 
                                         <div class="form-group">
+
                                             <input type="hidden" name="enviar" class="form-control" value="si">
+
                                             <button type="submit" class="btn btn-sm btn-hero btn-alt-primary">
                                                 <i class="si si-login mr-10"></i> Iniciar Sesión
                                             </button>
