@@ -61,69 +61,142 @@ require_once("../../config/conection.php");
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-username">Nombre de Usuario <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Introduce tu nombre de usuario.." required>
+                                                <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Introduce tu nombre de usuario..">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-email">Email <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Introduce tu email.."  required>
+                                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Introduce tu email..">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-password">Password <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Introduce tu contraseña.." required>
+                                                <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Introduce tu contraseña..">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-confirm-password">Confirma Password <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Confirma tu contraseña.." required>
+                                                <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Confirma tu contraseña..">
                                             </div>
                                         </div>
                                         
-
-
-                                       <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-skill">Nivel de Usuario <span class="text-danger">*</span></label>
-                                            <div class="col-lg-6">
-                                                <select class="form-control valid" id="val-skill" name="val-skill" aria-describedby="val-skill-error" aria-invalid="false" onchange="seleeccionaNivel(this.value);" required>
-                                                    <option value="">Selecciona un nivel de usuario</option>
+                                       <!--  <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="val-select2">Nivel de Usuario <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <select class="js-select2 form-control" id="select_principal"         name="select_principal" style="width: 100%;" data-placeholder="Choose one..">
+                                                    <option></option>
+                                                    
                                                     <option value="0">0-Administrador</option>
                                                     <option value="1">1-Coordinador</option>
                                                     <option value="2">2-Lider</option>
                                                 </select>
                                             </div>
+                                        </div> -->
+
+                                        <div class="form-group row">
+                                        <label class="col-lg-4 col-form-label" for="categoria">Nivel de Usuario:</label>
+                                        <select id="categoria" onchange="cargarOpciones()">
+                                        <!-- <select id="nivel" name="nivel" onchange="cargarOpciones()">  -->
+                                            <option value="">Seleccione...</option>
+                                            <option value="0">0-Administrador</option>
+                                            <option value="1">1-Coordinador</option>
+                                            <option value="2">2-Lider</option>
+                                        </select>
                                         </div>
 
 
-                                         <?php
-                                            include_once("../../model/Cordinador.php");
-                                            $consultaCoordinadores = new Coordinadores();
-                                            $resultado = $consultaCoordinadores->getCoordinadores();
-                                        ?>
-
-                                        <div class="form-group row" id="divCoordinador" style="display:none;">
-                                            <label class="col-lg-4 col-form-label" for="val-skill">Adscrito a Coordinador<span class="text-danger">*</span></label>
-                                            <div class="col-lg-6">
-                                                <select class="form-control valid" id="val-skill" name="val-skill" aria-describedby="val-skill-error" aria-invalid="false">
-                                                    <option value="" >Selecciona Cooordinador</option>
-                                                  <?php
-                                                    foreach ($resultado as $consultaCoordinadores) {
-                                                        echo '<option value="' . $consultaCoordinadores['id_usuario'] . '">' . $consultaCoordinadores['nombre'] . '</option>';
-                                                    }   
-                                                    
-                                                    ?>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <label for="items">Items:</label>
+                                        <select id="items">
+                                            <option value="">Seleccione categoría...</option>
+                                        </select>
                                         
+
+                                  
+    
+
+                                        
+                                        
+                                        
+                                     
+
                                         
 
 
+                                        <?php
+                                        $seleccionado = 2;
 
-                                      
+                                        switch ($seleccionado) {
+                                            case 0:
+                                                echo"Seleccionaste Administrador";
+                                                break;
+                                            case 1:
+                                                
+                                                break;
+                                            /*case 2:
+                                                echo"Seleccionaste Lider";
+                                                include_once("../../model/Cordinador.php");
+                                                $consultaCoordinadores = new Coordinadores();
+                                                $resultado = $consultaCoordinadores->getCoordinadores();                                        
+                                                // Mostrar select de Coordinadores
+                                                echo"<div class='form-group row'>
+                                                <label class='col-lg-4 col-form-label' for='items'>Adscrito con el Coordinador</label>
+                                                <select id='items'>
+                                                <option value=''>Seleccione Cordinador...</option>";
+
+                                                foreach($resultado as $row){
+                                                 echo '<option value="'.$row["id_usuario"].'">'.$row["nombre"].' '.$row["apellido"].'</option>';
+                                                    }
+                                                echo "</select>
+                                                </div>"; 
+                                               
+                                                break;*/
+
+                                            default:
+                                                // Código para ninguna opción seleccionada
+                                                break;
+                                        }
+                                        ?>    
+
+                                        <script>
+                                            function cargarOpciones() {
+                                                
+
+                                                // Datos simulados (en producción se haría con AJAX/PHP)
+                                                const datos = {
+                                                    0: ["Manzana", "Plátano", "Naranja"],
+                                                    1: ["Lechuga", "Zanahoria", "Brócoli"],
+                                                    2: ["Cebolla", "Pimiento", "Ajo"]
+                                                };
+
+                                                const categoria = document.getElementById("categoria").value;
+                                                const itemsSelect = document.getElementById("items");
+                                                
+                                                // Limpiar opciones anteriores
+                                                itemsSelect.innerHTML = '<option value="">Seleccione...</option>';
+
+                                                if (categoria in datos) {
+                                                    datos[categoria].forEach(function(item) {
+                                                        let option = document.createElement("option");
+                                                        option.value = item.toLowerCase();
+                                                        option.text = item;
+                                                        itemsSelect.add(option);
+                                                    });
+                                                }
+                                            }
+
+                                            function cargaLideres() { 
+                                                
+
+                                                
+                                                
+                                            }
+
+                                        </script>
+
+
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-suggestions">Comentarios <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
@@ -142,14 +215,11 @@ require_once("../../config/conection.php");
                                             </div>
                                         </div>
                                     </form>
-
-
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
 
 
 
@@ -168,7 +238,6 @@ require_once("../../config/conection.php");
         <!-- Codebase Core JS -->
       <?php require_once("../MainJs/MainJs.php"); ?>
       <script src="nuevousuario.js"></script>
-      <script src=funciones.js></script>
 
     </body>
 </html>
