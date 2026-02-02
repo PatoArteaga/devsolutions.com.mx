@@ -54,7 +54,32 @@ class Usuario extends conectar{
         
     }
 
-  
+
+    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel=2){
+        $conectar=parent::conexion();
+        parent::set_names();
+        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,estatus) VALUES (NULL,?,?,?,?,?,?,NULL,NULL,NULL,NULL,'2','1');";
+        $sql=$conectar->prepare($sql);
+        $sql->bindValue(1,$usuario);
+        $sql->bindValue(2,$nombre);
+        $sql->bindValue(3,$apellido);
+        $sql->bindValue(4,$email);
+        $sql->bindValue(5,$pass);
+        $sql->bindValue(6,$nivel);  
+        
+        $sql->execute();
+        return $resultado=$sql->fetchAll();
+    }
+
+    public function getCorreoUsuario($email){
+        $conectar=parent::conexion();
+        parent::set_names();
+        $sql="SELECT * FROM usuarios WHERE email=? AND estatus='1';";
+        $sql=$conectar->prepare($sql);
+        $sql->bindValue(1,$email);
+        $sql->execute();
+        return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
+   }
 
 
 

@@ -111,40 +111,62 @@
                                 <!-- Sign Up Form -->
                                 <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                <form class="js-validation-signup px-30" action="../" method="post">
+                                <div class=" px-30">
+                                    
+
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="text" class="form-control" id="signup-username" name="signup-username">
-                                                <label for="signup-username">Nombre y apellido</label>
+                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+                                                <label for="txtNombre">Nombre</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="text" class="form-control" id="txtApellido" name="txtApellido">
+                                                <label for="txtApellido">Apellido</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="email" class="form-control" id="signup-email" name="signup-email">
-                                                <label for="signup-email">Email</label>
+                                                <input type="email" class="form-control" id="txtEmail" name="txtEmail">
+                                                <label for="txtEmail">Email</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="password" class="form-control" id="signup-password" name="signup-password">
-                                                <label for="signup-password">Contraseña</label>
+                                                <input type="text" class="form-control" id="txtUsuario" name="txtUsuario">
+                                                <label for="txtUsuario">Usuario</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
                                             <div class="form-material floating">
-                                                <input type="password" class="form-control" id="signup-password-confirm" name="signup-password-confirm">
-                                                <label for="signup-password-confirm">Confirmar contraseña</label>
+                                                <input type="password" class="form-control" id="txtPassword1" name="txtPassword1">
+                                                <label for="txtPassword1">Contraseña</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="password" class="form-control" id="txtPassword2" name="txtPassword2">
+                                                <label for="txtPassword2">Confirmar contraseña</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- <div class="form-group row">
                                         <div class="col-12">
                                             <label class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
@@ -152,7 +174,8 @@
                                                 <span class="custom-control-description">Acepto los terminos &amp; condiciones </span>
                                             </label>
                                         </div>
-                                    </div>
+                                    </div>-->
+
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-sm btn-hero btn-alt-success">
                                             <i class="fa fa-plus mr-10"></i> Crear cuenta
@@ -166,7 +189,8 @@
                                             </a>
                                         </div>
                                     </div>
-                                </form>
+                                </div> 
+
                                 <!-- END Sign Up Form -->
                             </div>
                         </div>
@@ -193,7 +217,7 @@
                             </div>
                         </div>
                         <div class="block-content">
-                            <p>El Ayuntamientode Zitácuaro pone a su disposición ........</p>
+                       
                             <p>Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa, fusce ante convallis ante urna molestie vulputate bibendum tempus ante justo arcu erat accumsan adipiscing risus, libero condimentum venenatis sit nisl nisi ultricies sed, fames aliquet consectetur consequat nostra molestie neque nullam scelerisque neque commodo turpis quisque etiam egestas vulputate massa, curabitur tellus massa venenatis congue dolor enim integer luctus, nisi suscipit gravida fames quis vulputate nisi viverra luctus id leo dictum lorem, inceptos nibh orci.</p>
                             <p>Potenti elit lectus augue eget iaculis vitae etiam, ullamcorper etiam bibendum ad feugiat magna accumsan dolor, nibh molestie cras hac ac ad massa, fusce ante convallis ante urna molestie vulputate bibendum tempus ante justo arcu erat accumsan adipiscing risus, libero condimentum venenatis sit nisl nisi ultricies sed, fames aliquet consectetur consequat nostra molestie neque nullam scelerisque neque commodo turpis quisque etiam egestas vulputate massa, curabitur tellus massa venenatis congue dolor enim integer luctus, nisi suscipit gravida fames quis vulputate nisi viverra luctus id leo dictum lorem, inceptos nibh orci.</p>
                         </div>
@@ -226,6 +250,7 @@
 
         <!-- Page JS Code -->
         <script src="../public/assets/js/pages/op_auth_signup.js"></script>
+        <script type="text/javascript" src="registrarse.js"></script>
 
     </body>
 </html>
