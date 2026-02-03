@@ -13,7 +13,7 @@ $ip = "153.205.198.22";
 
 //http://www.geoplugin.net/
 
-$informacionPais = file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip);
+//$informacionPais = file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip);
 
 $datosPais = json_decode($informacionPais);
 

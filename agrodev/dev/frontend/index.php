@@ -2,6 +2,7 @@
 ini_set("display_errors",1);//Sirve para vizualizar los errores en el navegador
 ini_set("log_errors",1);//Almacena los errores
 ini_set("error_log","C:/xampp/htdocs/devsolutions.com.mx/agrodev/dev/frontend/php_error_log_frontend.txt");
+date_default_timezone_set('America/Mexico_City');
 
 
 require_once "controladores/plantilla.controlador.php";

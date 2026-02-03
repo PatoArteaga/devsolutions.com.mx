@@ -228,7 +228,7 @@ INFOPRODUCTOS
 					=============================================*/				
 					
 					if($infoproducto["oferta"] == 0){
-
+						$fecha=date_default_timezone_set('America/New_York');
 						$fecha = date('Y-m-d');
 						$fechaActual = strtotime('-30 day', strtotime($fecha));
 						$fechaNueva = date('Y-m-d', $fechaActual);
@@ -254,7 +254,7 @@ INFOPRODUCTOS
 						}
 
 					}else{
-
+						$fecha=date_default_timezone_set('America/New_York');
 						$fecha = date('Y-m-d');
 						$fechaActual = strtotime('-30 day', strtotime($fecha));
 						$fechaNueva = date('Y-m-d', $fechaActual);
