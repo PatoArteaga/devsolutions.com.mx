@@ -2,8 +2,6 @@
 
 class Coordinadores extends Conectar{
 
-
-
     public function getCoordinadores(){
         $conectar=parent::conexion();
         parent::set_names();

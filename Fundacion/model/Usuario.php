@@ -1,7 +1,7 @@
 <?php
-session_start();
 
-class Usuario extends conectar{
+
+class Usuario extends Conectar{
 
     public function login(){
     $conectar=parent::conexion();
@@ -55,17 +55,19 @@ class Usuario extends conectar{
     }
 
 
-    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel=2){
+    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel="2",$estatus="1"){
         $conectar=parent::conexion();
         parent::set_names();
-        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,estatus) VALUES (NULL,?,?,?,?,?,?,NULL,NULL,NULL,NULL,'2','1');";
+        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,estatus) VALUES (NULL,?,?,?,?,?,date(now()),NULL,NULL,NULL,?,?);";
         $sql=$conectar->prepare($sql);
         $sql->bindValue(1,$usuario);
         $sql->bindValue(2,$nombre);
         $sql->bindValue(3,$apellido);
         $sql->bindValue(4,$email);
         $sql->bindValue(5,$pass);
-        $sql->bindValue(6,$nivel);  
+        /* $sql->bindValue(6,date("Y-m-d H:i:s")); */
+        $sql->bindValue(6,$nivel);
+        $sql->bindValue(7,$estatus);
         
         $sql->execute();
         return $resultado=$sql->fetchAll();
