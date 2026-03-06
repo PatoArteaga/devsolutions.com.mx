@@ -58,37 +58,53 @@ require_once("../../config/conection.php");
                                     <!-- jQuery Validation (.js-validation-bootstrap class is initialized in js/pages/be_forms_validation.js) -->
                                     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
                                     <form class="js-validation-bootstrap" action="" method="post">
-                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Nombre de Usuario <span class="text-danger">*</span></label>
+
+                                    <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtUsuario">Usuario<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-username" name="val-username" placeholder="Introduce tu nombre de usuario.." required>
+                                                <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" placeholder="Introduce tu nombre de usuario.." required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtNombre">Nombre de Usuario <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Introduce tu nombre de usuario.." required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-email">Email <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtApellido">Apellido <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Introduce tu email.."  required>
+                                                <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Introduce tu apellido.." required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtEmail">Email <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Introduce tu email.."  required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-password">Password <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtPassword">Password <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="val-password" name="val-password" placeholder="Introduce tu contraseña.." required>
+                                                <input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Introduce tu contraseña.." required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-confirm-password">Confirma Password <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtPassword1">Confirma Password <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="val-confirm-password" name="val-confirm-password" placeholder="Confirma tu contraseña.." required>
+                                                <input type="password" class="form-control" id="txtPassword1" name="txtPassword1" placeholder="Confirma tu contraseña.." required>
                                             </div>
                                         </div>
                                         
 
 
                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-skill">Nivel de Usuario <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtNivel">Nivel de Usuario <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <select class="form-control valid" id="val-skill" name="val-skill" aria-describedby="val-skill-error" aria-invalid="false" onchange="seleeccionaNivel(this.value);" required>
+                                                <select class="form-control valid" id="txtNivel" name="txtNivel" aria-describedby="txtNivel-error" aria-invalid="false" onchange="seleeccionaNivel(this.value);" required>
                                                     <option value="">Selecciona un nivel de usuario</option>
                                                     <option value="0">0-Administrador</option>
                                                     <option value="1">1-Coordinador</option>
@@ -105,9 +121,9 @@ require_once("../../config/conection.php");
                                         ?>
 
                                         <div class="form-group row" id="divCoordinador" style="display:none;">
-                                            <label class="col-lg-4 col-form-label" for="val-skill">Adscrito a Coordinador<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtAdscrito">Adscrito a Coordinador<span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <select class="form-control valid" id="val-skill" name="val-skill" aria-describedby="val-skill-error" aria-invalid="false">
+                                                <select class="form-control valid" id="txtAdscrito" name="txtAdscrito" aria-describedby="txtAdscrito-error" aria-invalid="false">
                                                     <option value="" >Selecciona Cooordinador</option>
                                                   <?php
                                                     foreach ($resultado as $consultaCoordinadores) {
@@ -118,11 +134,6 @@ require_once("../../config/conection.php");
                                                 </select>
                                             </div>
                                         </div>
-                                        
-                                        
-
-
-
                                       
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-suggestions">Comentarios <span class="text-danger">*</span></label>

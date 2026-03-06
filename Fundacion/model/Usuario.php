@@ -55,7 +55,8 @@ class Usuario extends Conectar{
     }
 
 
-    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel="2",$estatus="1"){
+    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel="2",$estatus="0"){
+        try{
         $conectar=parent::conexion();
         parent::set_names();
         $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,estatus) VALUES (NULL,?,?,?,?,?,date(now()),NULL,NULL,NULL,?,?);";
@@ -71,9 +72,16 @@ class Usuario extends Conectar{
         
         $sql->execute();
         return $resultado=$sql->fetchAll();
+        }
+
+        catch(Exception $e){
+            echo "Error al registrar usuario: " . $e->getMessage();
+            return null;
+        }
     }
 
     public function getCorreoUsuario($email){
+        try{
         $conectar=parent::conexion();
         parent::set_names();
         $sql="SELECT * FROM usuarios WHERE email=? AND estatus='1';";
@@ -81,6 +89,12 @@ class Usuario extends Conectar{
         $sql->bindValue(1,$email);
         $sql->execute();
         return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
+        }
+        
+        catch(Exception $e){
+            echo "Error al obtener correo de usuario: " . $e->getMessage();
+            return null;
+        }
    }
 
 
