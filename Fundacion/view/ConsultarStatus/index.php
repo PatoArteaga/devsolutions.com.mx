@@ -1,7 +1,7 @@
 <?php
-     session_start(); // Inicia o reanuda la sesión
-   
-    ?>
+    require_once("../../config/conection.php");
+    
+ ?>
 
 
 <!doctype html>

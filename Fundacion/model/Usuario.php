@@ -13,7 +13,7 @@ class Usuario extends Conectar{
 
                 if(empty($usuario) and empty($password))
                 {
-                    header("Location:".conectar::ruta()."index.php?m=2");
+                    header("Location:".Conectar::ruta()."index.php?m=2");
                     exit();
                 }
                 else

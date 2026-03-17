@@ -9,10 +9,11 @@ switch($_GET["op"]){
    case "guardar":
                 $datos=$usuario->getCorreoUsuario($_POST["txtEmail"]);
 
-                if($_POST["txtPassword"]==$_POST["txtPassword1"]){
+                if($_POST["txtPassword1"]==$_POST["txtPassword2"]){
     
                     if(is_array($datos) and count($datos)==0){
-                    $usuario->registrarUsuario($_POST["txtUsuario"],$_POST["txtNombre"],$_POST["txtApellido"],$_POST["txtEmail"],$_POST["txtPassword"]);
+
+                        $usuario->registrarUsuario($_POST["txtUsuario"],$_POST["txtNombre"],$_POST["txtApellido"],$_POST["txtEmail"],$_POST["txtPassword1"]);
                     }
                 
                 }

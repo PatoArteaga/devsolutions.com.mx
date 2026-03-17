@@ -20,12 +20,8 @@ public class ViewCalculadora extends javax.swing.JPanel {
     public ViewCalculadora() {
         initComponents();
         ModelCalculadora modelCalculadora = new ModelCalculadora();
-        
-        
+
         objetoController = new ControllerCalculadora(modelCalculadora,this);
-        
-        
-        
         
     }
 
@@ -110,12 +106,12 @@ public class ViewCalculadora extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(lbl_resultado))
-                .addContainerGap(167, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(153, 153, 153)
                     .addComponent(btn_sumar)
-                    .addContainerGap(234, Short.MAX_VALUE)))
+                    .addContainerGap(150, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -130,8 +126,8 @@ public class ViewCalculadora extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 91, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

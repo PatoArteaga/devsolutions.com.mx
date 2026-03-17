@@ -102,7 +102,19 @@
 
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <?php echo strtoupper($_SESSION['nombre']);                    
+                    <?php 
+                    switch($_SESSION["nivel"]){
+                                            case "0";
+                                                echo "ADMINISTRADOR";
+                                            break;
+                                            case "1";
+                                                echo "COORDINADOR";
+                                            break;
+                                            case "2";
+                                                echo "LIDER";
+                                            break;
+                                            }
+                    //echo strtoupper($_SESSION['nombre']);                    
                     ?> <i class="fa fa-angle-down ml-5"></i>
                     
                 </button>
