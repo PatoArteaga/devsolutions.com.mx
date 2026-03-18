@@ -8,7 +8,7 @@ $usuario=new Usuario();
 $usuario->registrarUsuario("testuser","Test","User","test@example.com","password123");
 
 if($usuario);
-echo var_dump($usuario);
+var_dump($usuario);
 echo "El objeto usuario fue creado correctamente.";
 
 

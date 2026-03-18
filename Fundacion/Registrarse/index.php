@@ -111,84 +111,84 @@
                                 <!-- Sign Up Form -->
                                 <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                <div class=" px-30">
-                                    
-
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre">
-                                                <label for="txtNombre">Nombre</label>
+                                <div class="px-30">
+                                    <form method="post" class="js-validation-signup" id="usuario-form">
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="text" class="form-control" id="txtNombre" name="txtNombre" required>
+                                                    <label for="txtNombre">Nombre</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="text" class="form-control" id="txtApellido" name="txtApellido">
-                                                <label for="txtApellido">Apellido</label>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="text" class="form-control" id="txtApellido" name="txtApellido" required>
+                                                    <label for="txtApellido">Apellido</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="email" class="form-control" id="txtEmail" name="txtEmail">
-                                                <label for="txtEmail">Email</label>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" required>
+                                                    <label for="txtEmail">Email</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="text" class="form-control" id="txtUsuario" name="txtUsuario">
-                                                <label for="txtUsuario">Usuario</label>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" required>
+                                                    <label for="txtUsuario">Usuario</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="password" class="form-control" id="txtPassword1" name="txtPassword1">
-                                                <label for="txtPassword1">Contraseña</label>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="password" class="form-control" id="txtPassword1" name="txtPassword1" required>
+                                                    <label for="txtPassword1">Contraseña</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-12">
-                                            <div class="form-material floating">
-                                                <input type="password" class="form-control" id="txtPassword2" name="txtPassword2">
-                                                <label for="txtPassword2">Confirmar contraseña</label>
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="form-material floating">
+                                                    <input type="password" class="form-control" id="txtPassword2" name="txtPassword2" required>
+                                                    <label for="txtPassword2">Confirmar contraseña</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <!-- <div class="form-group row">
+                                            <div class="col-12">
+                                                <label class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
+                                                    <span class="custom-control-indicator"></span>
+                                                    <span class="custom-control-description">Acepto los terminos &amp; condiciones </span>
+                                                </label>
+                                            </div>
+                                        </div>-->
 
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-sm btn-hero btn-alt-success" name="action" id="btn-registrar" value="registrar">
+                                                <i class="fa fa-plus mr-10"></i> Crear cuenta
+                                            </button>
 
-                                    <!-- <div class="form-group row">
-                                        <div class="col-12">
-                                            <label class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
-                                                <span class="custom-control-indicator"></span>
-                                                <span class="custom-control-description">Acepto los terminos &amp; condiciones </span>
-                                            </label>
+                                            <div class="mt-30">
+                                                <!-- <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="#" data-toggle="modal" data-target="#modal-terms">
+                                                    <i class="fa fa-book text-muted mr-5"></i> Lee los terminos
+                                                </a>-->
+                                                <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../">
+                                                    <i class="fa fa-user text-muted mr-5"></i> Iniciar Sesion
+                                                </a>
+                                                <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../RecuperarContrasena">
+                                                <i class="fa fa-warning mr-5"></i> Olvide mi contraseña 
+                                                </a> 
+                                            </div>
                                         </div>
-                                    </div>-->
-
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-sm btn-hero btn-alt-success">
-                                            <i class="fa fa-plus mr-10"></i> Crear cuenta
-                                        </button>
-                                        <div class="mt-30">
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="#" data-toggle="modal" data-target="#modal-terms">
-                                                <i class="fa fa-book text-muted mr-5"></i> Lee los terminos
-                                            </a>
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../">
-                                                <i class="fa fa-user text-muted mr-5"></i> Iniciar Sesion
-                                            </a>
-                                        </div>
-                                    </div>
+                                    </form>   
                                 </div> 
 
                                 <!-- END Sign Up Form -->
@@ -250,6 +250,8 @@
 
         <!-- Page JS Code -->
         <script src="../public/assets/js/pages/op_auth_signup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <script type="text/javascript" src="registrarse.js"></script>
 
     </body>

@@ -1,5 +1,5 @@
 <?php
-require_once("../model/conectar.php");
+require_once("../config/conection.php");
 require_once("../model/Usuario.php");
 
 $usuario=new Usuario();
@@ -7,6 +7,7 @@ $usuario=new Usuario();
 switch($_GET["op"]){
 
    case "guardar":
+                //$datos=$usuario->getCorreoUsuario($_POST["txtEmail"]);
                 $datos=$usuario->getCorreoUsuario($_POST["txtEmail"]);
 
                 if($_POST["txtPassword1"]==$_POST["txtPassword2"]){
