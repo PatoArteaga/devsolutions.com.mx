@@ -84,7 +84,8 @@ class Usuario extends Conectar{
         try{
         $conectar=parent::conexion();
         parent::set_names();
-        $sql="SELECT * FROM usuarios WHERE email=? AND estatus='1';";
+        //$sql="SELECT * FROM usuarios WHERE email=? AND estatus='1';";
+        $sql="SELECT * FROM usuarios WHERE email=?;";
         $sql=$conectar->prepare($sql);
         $sql->bindValue(1,$email);
         $sql->execute();
@@ -96,10 +97,6 @@ class Usuario extends Conectar{
             return null;
         }
    }
-
-
-
-
 }
 
 

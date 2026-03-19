@@ -1,7 +1,5 @@
 
 
-// JavaScript Document
-//Función que se ejecuta al inicio
 function init(){
     $("#usuario-form").on("submit", function(e){
         guardaryEditar(e);
@@ -11,6 +9,7 @@ function init(){
 
 function guardaryEditar(e){
     console.log("ENTRO A GUARDAR");
+
     // Evitar que se recargue la página al enviar el formulario
     e.preventDefault();
 
@@ -20,30 +19,45 @@ function guardaryEditar(e){
    // Enviar los datos al servidor mediante AJAX
     $.ajax({
         url: "../controller/usuario.php?op=guardar",
-        type: "post",
+        type: "POST",
         data: formData,
         contentType: false,
         processData: false,
-        // Manejar la respuesta del servidor
-        // Mostrar la respuesta en la consola del navegador
-    success: function(datos){
-        console.log(datos);
-        
-        // Mostrar SweetAlert2 después de guardar el usuario
-        Swal.fire({
-        title: "Administrador",
-        text: "Registro exitoso, ahora puedes iniciar sesión",
-        icon: "success",
-        confirmButtonText: "ok",
-        }).then((result) => {
-            if (result.isConfirmed) {
-            window.location.href = "../index.php";
+        success: function(datos){ 
+            // Manejar la respuesta del servidor
+            // Mostrar la respuesta en la consola del navegador
+            console.log("DDatos en Datos:", datos);
+
+            if(datos == "pass"){
+                Swal.fire({
+                    title: "Administrador",
+                    text: "Error: Las contraseñas no coinciden",
+                    icon: "error",
+                    confirmButtonText: "ok",
+                    });
+                }
+            else if(datos == "mail"){  
+                Swal.fire({
+                    title: "Administrador",
+                    text: "Error: El correo electrónico ya está registrado",
+                    icon: "error",
+                    confirmButtonText: "ok",
+                    });
+                }
+            else{
+                Swal.fire({
+                    title: "Administrador",
+                    text: "Registro exitoso, porfavr espera autorizaciion de una administraddor para iniciar sesión",
+                    icon: "success",
+                    confirmButtonText: "ok",
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                        window.location.href = "../";
+                        }
+                    });
+                }
+            $("#usuario-form")[0].reset();
         }
-        });
-        
-        // Limpiar el formulario después de guardar
-        $("#usuario-form")[0].reset();
-    }
     });
 }
     

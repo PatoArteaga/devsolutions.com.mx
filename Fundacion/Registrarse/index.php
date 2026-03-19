@@ -112,7 +112,8 @@
                                 <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.js) -->
                                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
                                 <div class="px-30">
-                                    <form method="post" class="js-validation-signup" id="usuario-form">
+                                    <!-- <form method="post" class="js-validation-signup" id="usuario-form"> -->
+                                    <form method="post" class="" id="usuario-form">
                                         <div class="form-group row">
                                             <div class="col-12">
                                                 <div class="form-material floating">
@@ -172,7 +173,7 @@
                                         </div>-->
 
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-sm btn-hero btn-alt-success" name="action" id="btn-registrar" value="registrar">
+                                            <button type="submit" class="btn btn-sm btn-hero btn-alt-success" name="action" id="btn-registrar" value="add">
                                                 <i class="fa fa-plus mr-10"></i> Crear cuenta
                                             </button>
 

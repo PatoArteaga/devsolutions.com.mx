@@ -43,7 +43,11 @@
 
             <!-- Color Themes (used just for demonstration) -->
             <!-- Themes functionality initialized in Codebase() -> uiHandleTheme() -->
-            <div class="btn-group" role="group">
+            
+
+            <!-- Menu de temas, se puede eliminar si no se requiere, o agregar mas temas personalizados, revisar la documentación para mas detalles. -->
+            
+            <!-- <div class="btn-group" role="group">
                 <button type="button" class="btn btn-circle btn-dual-secondary" id="page-header-themes-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-paint-brush"></i>
                 </button>
@@ -88,7 +92,9 @@
                         <i class="fa fa-paint-brush"></i> All Color Themes
                     </a>
                 </div>
-            </div>
+            </div> -->
+
+            
             <!-- END Color Themes -->
         </div>
         <!-- END Left Section -->
