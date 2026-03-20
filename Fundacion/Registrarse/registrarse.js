@@ -26,7 +26,7 @@ function guardaryEditar(e){
         success: function(datos){ 
             // Manejar la respuesta del servidor
             // Mostrar la respuesta en la consola del navegador
-            console.log("DDatos en Datos:", datos);
+            console.log("Datos en Datos:", datos);
 
             if(datos == "pass"){
                 Swal.fire({
@@ -47,7 +47,7 @@ function guardaryEditar(e){
             else{
                 Swal.fire({
                     title: "Administrador",
-                    text: "Registro exitoso, porfavr espera autorizaciion de una administraddor para iniciar sesión",
+                    text: "Registro exitoso, porfavor espera autorizacion de una administrador para iniciar sesión",
                     icon: "success",
                     confirmButtonText: "ok",
                     }).then((result) => {
