@@ -57,21 +57,17 @@ require_once("../../config/conection.php");
                                 <div class="col-xl-6">
                                     <!-- jQuery Validation (.js-validation-bootstrap class is initialized in js/pages/be_forms_validation.js) -->
                                     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                    <form class="js-validation-bootstrap" action="" method="post">
-
-                                    <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="txtUsuario">Usuario<span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" placeholder="Introduce tu nombre de usuario.." required>
-                                            </div>
-                                        </div>
+                                    <!-- <form class="js-validation-bootstrap" method="post" id="formularioNuevoUsuario"> -->
+                                    <form class="js-validation-bootstrap" method="post" id="formularioNuevoUsuario">
+                                        <input type="hidden" name="usuario" class="form-control" value="si">
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="txtNombre">Nombre de Usuario <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtNombre">Nombre <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Introduce tu nombre de usuario.." required>
+                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Introduce tu nombre.." required>
                                             </div>
                                         </div>
+
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtApellido">Apellido <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
@@ -86,22 +82,29 @@ require_once("../../config/conection.php");
                                                 <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="Introduce tu email.."  required>
                                             </div>
                                         </div>
+
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="txtPassword">Password <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtUsuario">Usuario<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Introduce tu contraseña.." required>
+                                                <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" placeholder="Introduce tu nombre de usuario.." required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtPassword1">Password <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="password" class="form-control" id="txtPassword1" name="txtPassword1" placeholder="Introduce tu contraseña.." required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="txtPassword1">Confirma Password <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtPassword2">Confirma Password <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="password" class="form-control" id="txtPassword1" name="txtPassword1" placeholder="Confirma tu contraseña.." required>
+                                                <input type="password" class="form-control" id="txtPassword2" name="txtPassword2" placeholder="Confirma tu contraseña.." required>
                                             </div>
                                         </div>
                                         
 
-
-                                       <div class="form-group row">
+                                        <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtNivel">Nivel de Usuario <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
                                                 <select class="form-control valid" id="txtNivel" name="txtNivel" aria-describedby="txtNivel-error" aria-invalid="false" onchange="seleeccionaNivel(this.value);" required>
@@ -129,27 +132,38 @@ require_once("../../config/conection.php");
                                                     foreach ($resultado as $consultaCoordinadores) {
                                                         echo '<option value="' . $consultaCoordinadores['id_usuario'] . '">' . $consultaCoordinadores['nombre'] . '</option>';
                                                     }   
-                                                    
                                                     ?>
                                                 </select>
                                             </div>
                                         </div>
                                       
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Comentarios <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtComentarios">Comentarios <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5" placeholder="Escribe aqui tus comentarios."></textarea>
+                                                <textarea class="form-control" id="txtComentarios" name="txtComentarios" rows="5" placeholder="Escribe aqui tus comentarios."></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Telefono (Celular) <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtTelefono">Telefono (Celular) <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="715 134 ....">
+                                                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="715 134 ....">
                                             </div>
                                         </div>
+
+                                        
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtSistema" >Plataforma web<span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <label class="css-control css-control-primary css-checkbox" for="txtEstatus">
+                                                    <input type="checkbox" class="css-control-input" id="txtEstatus" name="txtEstatus" value="1" checked>
+                                                    <span class="css-control-indicator"></span> Activo
+                                                </label>
+                                            </div>
+                                        </div>
+
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
-                                                <button type="submit" class="btn btn-alt-primary">Registrar</button>
+                                                <button type="submit" class="btn btn-alt-primary" name="action" id="btn-registrar" value="add">Registrar</button>
                                             </div>
                                         </div>
                                     </form>
@@ -177,9 +191,15 @@ require_once("../../config/conection.php");
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-      <?php require_once("../MainJs/MainJs.php"); ?>
+    <?php require_once("../MainJs/MainJs.php"); ?>
+    
+    <!-- Page JS Code -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
       <script src="nuevousuario.js"></script>
       <script src=funciones.js></script>
+      
+
 
     </body>
 </html>

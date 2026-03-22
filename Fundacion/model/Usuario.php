@@ -55,11 +55,11 @@ class Usuario extends Conectar{
     }
 
 
-    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel="2",$estatus="0"){
+    public function registrarUsuario($usuario,$nombre,$apellido,$email,$pass,$nivel="2",$comentarios=NULL,$estatus="0"){
         try{
         $conectar=parent::conexion();
         parent::set_names();
-        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,estatus) VALUES (NULL,?,?,?,?,?,date(now()),NULL,NULL,NULL,?,?);";
+        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,comentarios,estatus) VALUES (NULL,?,?,?,?,?,date(now()),NULL,NULL,NULL,?,?,?);";
         $sql=$conectar->prepare($sql);
         $sql->bindValue(1,$usuario);
         $sql->bindValue(2,$nombre);
@@ -68,7 +68,8 @@ class Usuario extends Conectar{
         $sql->bindValue(5,$pass);
         /* $sql->bindValue(6,date("Y-m-d H:i:s")); */
         $sql->bindValue(6,$nivel);
-        $sql->bindValue(7,$estatus);
+        $sql->bindValue(7,$comentarios);
+        $sql->bindValue(8,$estatus);
         
         $sql->execute();
         return $resultado=$sql->fetchAll();
@@ -79,6 +80,49 @@ class Usuario extends Conectar{
             return null;
         }
     }
+
+
+    public function registrarUsuarionivel1($usuario,$nombre,$apellido,$email,$pass,$nivel="1",$comentarios=NULL,$estatus="0"){
+        try{
+        $conectar=parent::conexion();
+        parent::set_names();
+        
+        // Iniciar transacción
+        $conectar->beginTransaction();
+        
+        // Primera consulta: Insertar usuario
+        $sql="INSERT INTO usuarios (id_usuario,usuario,nombre,apellido,email,pass,f_creacion,f_modificacion,f_eliminacion,img,nivel,comentarios,estatus) VALUES (NULL,?,?,?,?,?,date(now()),NULL,NULL,NULL,?,?,?)";
+        $stmt=$conectar->prepare($sql);
+        $stmt->bindValue(1,$usuario);
+        $stmt->bindValue(2,$nombre);
+        $stmt->bindValue(3,$apellido);
+        $stmt->bindValue(4,$email);
+        $stmt->bindValue(5,$pass);
+        $stmt->bindValue(6,$nivel);
+        $stmt->bindValue(7,$comentarios);
+        $stmt->bindValue(8,$estatus);
+        $stmt->execute();
+        
+        // Obtener el último ID insertado
+        $ultimo_id = $conectar->lastInsertId();
+        
+        // Segunda consulta: Insertar coordinador
+        $sql2="INSERT INTO coordinador (id_cordinador,id_usuario) VALUES (NULL, ?)";
+        $stmt2=$conectar->prepare($sql2);
+        $stmt2->bindValue(1,$ultimo_id);
+        $stmt2->execute();
+        
+        // Confirmar transacción
+        $conectar->commit();
+        
+        return true;
+        }
+        catch(Exception $e){
+            echo "Error al registrar usuario: " . $e->getMessage();
+            return null;
+            }
+        }
+
 
     public function getCorreoUsuario($email){
         try{

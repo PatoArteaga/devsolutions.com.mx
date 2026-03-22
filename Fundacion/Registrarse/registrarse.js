@@ -26,7 +26,9 @@ function guardaryEditar(e){
         success: function(datos){ 
             // Manejar la respuesta del servidor
             // Mostrar la respuesta en la consola del navegador
-            console.log("Datos en Datos:", datos);
+            console.log("Datos enviados al servidor: ");
+            console.log(Object.fromEntries(formData));
+            console.log("Respuesta del backend: Error (" + datos + ")");
 
             if(datos == "pass"){
                 Swal.fire({
