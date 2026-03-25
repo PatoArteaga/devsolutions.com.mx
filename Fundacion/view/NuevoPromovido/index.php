@@ -56,58 +56,107 @@ require_once("../../config/conection.php");
                                 <div class="col-xl-6">
                                     <!-- jQuery Validation (.js-validation-bootstrap class is initialized in js/pages/be_forms_validation.js) -->
                                     <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                                    <form class="js-validation-bootstrap" action="../Home" method="post">
+                                    <form class="js-validation-bootstrap" action="" method="post" id="nuevoPromovido-form" enctype="multipart/form-data">
+                                        
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Nombre:  <span class="text-danger">*</span></label >
+                                            <label class="col-lg-4 col-form-label" for="txtNombre">Nombre:  <span class="text-danger">*</span></label >
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-username" name="val-nombre" placeholder="Introduce tu nombre de usuario.." required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Primer Apellido <span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-username" name="val-apeññido1" placeholder="Introduce tu nombre de usuario..">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Segundo Apellido <span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-username" name="val-apellido2" placeholder="Introduce tu nombre de usuario..">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-username">Dirección <span class="text-danger">*</span></label>
-                                            <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-Direccion" name="val-Direccion" placeholder="Introduce tu dirección..">
+                                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Introduce tu nombre de usuario.." required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-phoneus">Telefono (Celular) <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtApellido1">Apellido paterno: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtApellido1" name="txtApellido1" placeholder="Introduce tu primer apellido..">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtApellido2"> Apellido materno: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtApellido2" name="txtApellido2" placeholder="Introduce tu segundo apellido..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtTelefono">Telefono (Celular): <span class="text-danger">*</span></label>
                                             <div class="col-lg-6">
-                                                <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="715 134 ...." required>
+                                                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono" placeholder="715 134 ...." required>
                                             </div>
                                         </div>
 
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtClaveElector">Clave de elector: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtClaveElector" name="txtClaveElector" placeholder="Introduce tu clave de elector..">
+                                            </div>
+                                        </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-email">Email <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtCalle">Calle: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="val-email" name="val-email" placeholder="Introduce tu email..">
+                                                <input type="text" class="form-control" id="txtCalle" name="txtCalle" placeholder="Introduce tu calle..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtNumero">Numero (Int/Ext): <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtNumero" name="txtNumero" placeholder="Introduce tu numero..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtColonia">Colonia: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtColonia" name="txtColonia" placeholder="Introduce tu colonia..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtCp">CP: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtCp" name="txtCp" placeholder="Introduce tu codigo postal..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtMunicipio">Delegación/Municipio: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtMunicipio" name="txtMunicipio" placeholder="Introduce tu delegación/municipio..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="txtSeccion">Sección electoral: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-8">
+                                                <input type="text" class="form-control" id="txtSeccion" name="txtSeccion" placeholder="Introduce tu sección electoral..">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row" id="divCoordinador" style="">
+                                            <label class="col-lg-4 col-form-label" for="txtDv">Seleecciona: <span class="text-danger">*</span></label>
+                                            <div class="col-lg-6">
+                                                <select class="form-control valid" id="txtDv" name="txtDv" aria-describedby="txtDv-error" aria-invalid="false">
+                                                    <option value="0" >N/A</option>
+                                                    <option value="1" >DV</option>
+                                                    <option value="2" >MOV</option>
+                                                    <option value="3" >Cómite</option>
+                                                </select>
                                             </div>
                                         </div>
 
                                         
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Comentarios <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtComentarios">Comentarios <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <textarea class="form-control" id="val-suggestions" name="val-suggestions" rows="5" placeholder="Escribe aqui tus comentarios."></textarea>
+                                                <textarea class="form-control" id="txtComentarios" name="txtComentarios" rows="5" placeholder="Escribe aqui tus comentarios."></textarea>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Ine<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtFoto1">Subir Ine<span class="text-danger">*</span></label>
                                             
                                             <div class="col-lg-8">
                                                 <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
@@ -118,7 +167,7 @@ require_once("../../config/conection.php");
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Ine reverso<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtFoto2">Subir Ine reverso<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
                                                 <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
                                                 <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
@@ -130,7 +179,7 @@ require_once("../../config/conection.php");
 
 
                                          <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="val-suggestions">Subir Comprobante de Doomicilio<span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtComprobante">Subir Comprobante de Doomicilio<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
                                                 <!-- <label for="formFile" class="form-label">Seleccionar</label> -->
                                                 <!-- <input class="form-control" type="file" id="formFile" name="imagen" capture="camera" accept="image/*"> -->
