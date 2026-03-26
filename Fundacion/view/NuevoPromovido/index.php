@@ -68,13 +68,13 @@ require_once("../../config/conection.php");
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtApellido1">Apellido paterno: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtApellido1" name="txtApellido1" placeholder="Introduce tu primer apellido..">
+                                                <input type="text" class="form-control" id="txtApellido1" name="txtApellido1" placeholder="Introduce tu primer apellido.." required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtApellido2"> Apellido materno: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtApellido2" name="txtApellido2" placeholder="Introduce tu segundo apellido..">
+                                                <input type="text" class="form-control" id="txtApellido2" name="txtApellido2" placeholder="Introduce tu segundo apellido.." required>
                                             </div>
                                         </div>
 
@@ -88,28 +88,28 @@ require_once("../../config/conection.php");
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtClaveElector">Clave de elector: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtClaveElector" name="txtClaveElector" placeholder="Introduce tu clave de elector..">
+                                                <input type="text" class="form-control" id="txtClaveElector" name="txtClaveElector" placeholder="Introduce tu clave de elector.." required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtCalle">Calle: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtCalle" name="txtCalle" placeholder="Introduce tu calle..">
+                                                <input type="text" class="form-control" id="txtCalle" name="txtCalle" placeholder="Introduce tu calle.." required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtNumero">Numero (Int/Ext): <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtNumero" name="txtNumero" placeholder="Introduce tu numero..">
+                                                <input type="text" class="form-control" id="txtNumero" name="txtNumero" placeholder="Introduce tu numero.." required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtColonia">Colonia: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtColonia" name="txtColonia" placeholder="Introduce tu colonia..">
+                                                <input type="text" class="form-control" id="txtColonia" name="txtColonia" placeholder="Introduce tu colonia.." required>
                                             </div>
                                         </div>
 
@@ -123,14 +123,14 @@ require_once("../../config/conection.php");
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtMunicipio">Delegación/Municipio: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtMunicipio" name="txtMunicipio" placeholder="Introduce tu delegación/municipio..">
+                                                <input type="text" class="form-control" id="txtMunicipio" name="txtMunicipio" placeholder="Introduce tu delegación/municipio.." required>
                                             </div>
                                         </div>
 
                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="txtSeccion">Sección electoral: <span class="text-danger">*</span></label>
+                                            <label class="col-lg-4 col-form-label" for="txtSeccionElectoral">Sección electoral: <span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <input type="text" class="form-control" id="txtSeccion" name="txtSeccion" placeholder="Introduce tu sección electoral..">
+                                                <input type="text" class="form-control" id="txtSeccionElectoral" name="txtSeccionElectoral" placeholder="Introduce tu sección electoral.." required>
                                             </div>
                                         </div>
 
@@ -155,6 +155,7 @@ require_once("../../config/conection.php");
                                             </div>
                                         </div>
 
+
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtFoto1">Subir Ine<span class="text-danger">*</span></label>
                                             
@@ -176,8 +177,6 @@ require_once("../../config/conection.php");
                                             </div>                                            
                                         </div>
 
-
-
                                          <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="txtComprobante">Subir Comprobante de Doomicilio<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
@@ -187,6 +186,12 @@ require_once("../../config/conection.php");
                                                <!--  <button type="submit" class="btn btn-primary">Subir Imagen</button> -->      
                                             </div>                                            
                                         </div>
+
+                                        
+                                        <input type="hidden" id="txtIdCoordinador" name="txtIdCoordinador" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
+                                        <input type="hidden" id="txtIdLider" name="txtIdLider" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
+                                        <input type="hidden" id="txtIdCapturo" name="txtIdCapturo" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
+
 
                                         <div class="form-group row">
                                             <div class="col-lg-8 ml-auto">
@@ -215,8 +220,9 @@ require_once("../../config/conection.php");
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-      <?php require_once("../MainJs/MainJs.php"); ?>
-      <script src="nuevopromovido.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <?php require_once("../MainJs/MainJs.php"); ?>
+    <script src="nuevopromovido.js"></script>
 
     </body>
 </html>

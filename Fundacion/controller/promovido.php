@@ -61,24 +61,22 @@ switch($_GET["op"]){
 
                     }
 
-                    
-
                     if(ISSET($_POST["txtIdCoordinador"]) && !empty($_POST["txtIdCoordinador"])){
                         $id_coordinador = $_POST["txtIdCoordinador"];
                     } else {
-                        $id_coordinador = NULL; // O puedes asignar un valor predeterminado si lo prefieres
+                        $id_coordinador = 0; // O puedes asignar un valor predeterminado si lo prefieres
 
                     }
                     if(ISSET($_POST["txtIdLider"]) && !empty($_POST["txtIdLider"])){
                         $id_lider = $_POST["txtIdLider"];
                     } else {
-                        $id_lider = NULL; // O puedes asignar un valor predeterminado si lo prefieres
+                        $id_lider = 0; // O puedes asignar un valor predeterminado si lo prefieres
 
                     }
-                    if(ISSET($_POST["txtCapturo"]) && !empty($_POST["txtCapturo"])){
-                        $capturo = $_POST["txtCapturo"];
+                    if(ISSET($_POST["txtIdCapturo"]) && !empty($_POST["txtIdCapturo"])){
+                        $capturo = $_POST["txtIdCapturo"];
                     } else {
-                        $capturo = NULL; // O puedes asignar un valor predeterminado si lo prefieres
+                        $capturo = 0; // O puedes asignar un valor predeterminado si lo prefieres
 
                     }
                     if(ISSET($_POST["txtAplicaMeta"]) && !empty($_POST["txtAplicaMeta"])){
@@ -96,14 +94,11 @@ switch($_GET["op"]){
                     if(ISSET($_POST["txtEstatus"]) && !empty($_POST["txtEstatus"])){
                         $estatus = $_POST["txtEstatus"];
                     } else {
-                        $estatus = 0; // O puedes asignar un valor predeterminado si lo prefieres
+                        $estatus = 1; // O puedes asignar un valor predeterminado si lo prefieres
 
                     }
-                
-            
-
-
-
+                    
+                    $promovido->registrarPromovido($_POST["txtNombre"],$_POST["txtApellido1"],$_POST["txtApellido2"],$telefono,$_POST["txtClaveElector"],$_POST["txtCalle"],$_POST["txtNumero"],$_POST["txtColonia"],$_POST["txtCp"],$_POST["txtMunicipio"],$_POST["txtSeccionElectoral"],$dv,$abierto,$foto1,$foto2,$foto3,$comentarios,$id_coordinador,$id_lider,$capturo,$aplica_meta,$estatus);
                 }
                 else{
                     echo "clave";//envia al ajax(frontend):  "La clave de elector ya existe, por favor verifica.";

@@ -104,7 +104,7 @@
             <!-- User Dropdown -->
 
             <!-- ID del Usuario useridx-->
-            <input type="hidden" id="useridx" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
+            <input type="hidden" id="id_usuario" class="form-control" value=<?php echo $_SESSION["id_usuario"]?>>
 
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

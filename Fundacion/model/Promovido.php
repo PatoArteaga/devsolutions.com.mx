@@ -1,7 +1,7 @@
 <?php
 class Promovido extends Conectar{
 
-    public function registrarPromovido($nombre,$apellido1,$apellido2,$telefono,$clave_elector,$calle,$numero,$colonia,$cp,$municipio,$seccion_electoral,$dv="N/A",$abierto="N/A",$foto1=NULL,$foto2=NULL,$foto3=NULL,$comentarios=NULL,$id_coordinador=NULL,$id_lider=NULL,$capturo=NULL,$aplica_meta=NULL,$estatus="0"){
+    public function registrarPromovido($nombre,$apellido1,$apellido2,$telefono,$clave_elector,$calle,$numero,$colonia,$cp,$municipio,$seccion_electoral,$dv="N/A",$abierto="N/A",$foto1=NULL,$foto2=NULL,$foto3=NULL,$comentarios=NULL,$id_coordinador=NULL,$id_lider=NULL,$capturo=NULL,$aplica_meta=NULL,$estatus="1"){
         try{
         $conectar=parent::conexion();
         parent::set_names();
@@ -47,6 +47,7 @@ class Promovido extends Conectar{
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$clave_elector);
             $sql->execute();
+            //echo "Número de promovidos encontrados con clave de elector '$clave_elector': " . $sql->rowCount() . "<br>"; // Agregado para depuración
             return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC);
             }
             catch(Exception $e){

@@ -4,7 +4,9 @@
     const labelNP1 = document.getElementById("label-NP");
     labelNP1.classList.add("active");
 
-function init(){
+    $id_usuario = document.getElementById("id_usuario").value;
+
+    function init(){
     $("#nuevoPromovido-form").on("submit", function(e){
         guardaryEditar(e);
     });
@@ -12,6 +14,7 @@ function init(){
 
 function guardaryEditar(e){
    console.log("ENTRO A GUARDAR");
+   console.log("ID del usuario: " + $id_usuario);
 
     e.preventDefault();
 
@@ -22,7 +25,7 @@ function guardaryEditar(e){
 
 
     $.ajax({
-        url: "../../controller/usuario.php?op=guardar",
+        url: "../../controller/promovido.php?op=guardar",
         type: "POST",
         data: formData,
         contentType: false,
@@ -34,15 +37,30 @@ function guardaryEditar(e){
             console.log(Object.fromEntries(formData));
             console.log("Respuesta del backend: Error (" + datos + ")");
 
-            if(datos == "pass"){
+            if(datos == "clave"){
                 Swal.fire({
                     title: "Administrador",
-                    text: "Error: Las contraseñas no coinciden",
+                    text: "Error: La clave de elector ya existe",
                     icon: "error",
                     confirmButtonText: "ok",
                     });
                 }
+            else{
+                Swal.fire({
+                    title: "Administrador",
+                    text: "Registro exitoso!!",
+                    icon: "success",
+                    confirmButtonText: "ok",
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                        window.location.href = "../NuevoPromovido/";
+                        }
+                    });
+                }
+            $("#nuevoPromovido-form")[0].reset();
         }
     });
 }
+
+
 init();
