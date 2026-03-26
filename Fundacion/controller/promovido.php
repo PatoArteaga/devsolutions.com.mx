@@ -99,16 +99,16 @@ switch($_GET["op"]){
                         $estatus = 0; // O puedes asignar un valor predeterminado si lo prefieres
 
                     }
-
-
-
-
-                break;
+                
             
 
 
 
-
+                }
+                else{
+                    echo "clave";//envia al ajax(frontend):  "La clave de elector ya existe, por favor verifica.";
+                }
+                break;
 
 
 }

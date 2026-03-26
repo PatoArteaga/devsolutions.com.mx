@@ -6,8 +6,8 @@ class Conectar{
 
     protected function conexion(){
         try {
-            //$conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","Outword1d");
-            $conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","root");
+            $conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","Outwor1d");
+            //$conectar=$this->dbh = new PDO("mysql:local=localhost;dbname=DevSol-13RegProm_dev","root","root");
             return $conectar;
         } 
         catch (Exception $e) {
@@ -22,7 +22,7 @@ class Conectar{
 
     public static function ruta(){
         //return "http://localhost:8888/devsolutions.com.mx/fundacion/";    
-        return "http://192.168.0.6:8888/devsolutions.com.mx/fundacion/";
+        return "http://localhost/devsolutions.com.mx/fundacion/";
     }
 
 }
