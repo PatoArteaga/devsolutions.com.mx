@@ -45,276 +45,64 @@ require_once("../../config/conection.php");
 
                         <div class="block-content block-content-full">
                             <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/be_tables_datatables.js -->
+                            <?php
+                                            include_once("../../model/Promovido.php");
+                                            $consultaPromovidos = new Promovido();
+                                            $resultado = $consultaPromovidos->getPromovidos();
+                                        ?>
+
                             <table class="table table-bordered table-striped table-vcenter js-dataTable-full">
                                 <thead>
                                     <tr>
-                                        <th class="text-center"></th>
-                                        <th>Nombre</th>
-                                        <th class="d-none d-sm-table-cell">email</th>
-                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Afiliado</th>
-                                        <th class="text-center" style="width: 15%;">Promovido</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 2%;">ID</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Nombre</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Telefono</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Clave Elector</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Municipio</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Fecha de registro</th>
+                                        <th class="d-none d-sm-table-cell" style="width: 5%;">Promovido</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?PHP
+                                    foreach($resultado as $promovido){  
+                                        echo "<tr>";
+                                        echo "<td class='text-center'>" . $promovido['id_promovido'] . "</td>";
+                                        echo "<td class='font-w600'>" . $promovido['nombre'] . " " . $promovido['apellido1'] . " " . $promovido['apellido2'] . "</td>";
+                                        echo "<td class='d-none d-sm-table-cell'>" . $promovido['telefono'] . "</td>";
+                                        echo "<td class='d-none d-sm-table-cell'>" . $promovido['clave_elector'] . "</td>";
+                                        echo "<td class='d-none d-sm-table-cell'><span class='badge badge-success'>" . $promovido['municipio'] . "</span></td>";
+                                        echo "<td class='d-none d-sm-table-cell'>" . date("d-m-Y", strtotime($promovido['fecha_registro'])) . "</td>";
+                                        echo "<td class='d-none d-sm-table-cell'><span class='badge badge-success'>Si</span></td>";
+                                        echo "</tr>";
+                                    }
+                                    
+                                    ?>
+                                    
+
+                                    
                                     <tr>
                                         <td class="text-center">1</td>
                                         <td class="font-w600">Barbara Scott</td>
-                                        <td class="d-none d-sm-table-cell">customer1@example.com</td>
+                                        <td class="d-none d-sm-table-cell">4521135117</td>
+                                        <td class="d-none d-sm-table-cell">CLAVE1234567890</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
+                                            <span class="badge badge-success">Zitacuaro</span>
                                         </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
+                                        <td class="d-none d-sm-table-cell">23-02-2026</td>
+                                        <td class="d-none d-sm-table-cell"><span class="badge badge-success">Si</span></td>
                                     </tr>
+
                                     <tr>
-                                        <td class="text-center">2</td>
-                                        <td class="font-w600">Laura Carr</td>
-                                        <td class="d-none d-sm-table-cell">customer2@example.com</td>
+                                        <td class="text-center">1</td>
+                                        <td class="font-w600">Barbara Scott</td>
+                                        <td class="d-none d-sm-table-cell">4521135117</td>
+                                        <td class="d-none d-sm-table-cell">CLAVE1234567890</td>
                                         <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-success">VIP</span>
+                                            <span class="badge badge-danger">Morelia</span>
                                         </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3</td>
-                                        <td class="font-w600">Melissa Rice</td>
-                                        <td class="d-none d-sm-table-cell">customer3@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">4</td>
-                                        <td class="font-w600">Susan Day</td>
-                                        <td class="d-none d-sm-table-cell">customer4@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">5</td>
-                                        <td class="font-w600">Sara Fields</td>
-                                        <td class="d-none d-sm-table-cell">customer5@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">6</td>
-                                        <td class="font-w600">Carl Wells</td>
-                                        <td class="d-none d-sm-table-cell">customer6@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">7</td>
-                                        <td class="font-w600">Lori Moore</td>
-                                        <td class="d-none d-sm-table-cell">customer7@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">8</td>
-                                        <td class="font-w600">Jeffrey Shaw</td>
-                                        <td class="d-none d-sm-table-cell">customer8@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">9</td>
-                                        <td class="font-w600">Scott Young</td>
-                                        <td class="d-none d-sm-table-cell">customer9@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">10</td>
-                                        <td class="font-w600">Sara Fields</td>
-                                        <td class="d-none d-sm-table-cell">customer10@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">11</td>
-                                        <td class="font-w600">Carol White</td>
-                                        <td class="d-none d-sm-table-cell">customer11@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">12</td>
-                                        <td class="font-w600">Brian Cruz</td>
-                                        <td class="d-none d-sm-table-cell">customer12@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-primary">Personal</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">13</td>
-                                        <td class="font-w600">Albert Ray</td>
-                                        <td class="d-none d-sm-table-cell">customer13@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">14</td>
-                                        <td class="font-w600">Lori Grant</td>
-                                        <td class="d-none d-sm-table-cell">customer14@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">15</td>
-                                        <td class="font-w600">Danielle Jones</td>
-                                        <td class="d-none d-sm-table-cell">customer15@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-success">VIP</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">16</td>
-                                        <td class="font-w600">Carol Ray</td>
-                                        <td class="d-none d-sm-table-cell">customer16@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">17</td>
-                                        <td class="font-w600">Judy Ford</td>
-                                        <td class="d-none d-sm-table-cell">customer17@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-info">Business</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">18</td>
-                                        <td class="font-w600">David Fuller</td>
-                                        <td class="d-none d-sm-table-cell">customer18@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-primary">Personal</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">19</td>
-                                        <td class="font-w600">Lori Moore</td>
-                                        <td class="d-none d-sm-table-cell">customer19@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-warning">Trial</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">20</td>
-                                        <td class="font-w600">Helen Jacobs</td>
-                                        <td class="d-none d-sm-table-cell">customer20@example.com</td>
-                                        <td class="d-none d-sm-table-cell">
-                                            <span class="badge badge-danger">Disabled</span>
-                                        </td>
-                                        <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="View Customer">
-                                                <i class="fa fa-user"></i>
-                                            </button>
-                                        </td>
+                                        <td class="d-none d-sm-table-cell">23-02-2026</td>
+                                        <td class="d-none d-sm-table-cell"><span class="badge badge-success">Si</span></td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -39,7 +39,7 @@ class Promovido extends Conectar{
 
     }
 
-    public function getPromovidos($clave_elector){  
+    public function getPromovido($clave_elector){  
         try{
             $conectar=parent::conexion();
             parent::set_names();
@@ -54,6 +54,54 @@ class Promovido extends Conectar{
                 die("Error al obtener los promovidos: ".$e->getMessage());
                 }
         }
+
+    public function getPromovidos(){  
+        try{
+            $conectar=parent::conexion();
+            parent::set_names();
+            $sql="SELECT * FROM promovidos";
+            $sql=$conectar->prepare($sql);
+            $sql->execute();
+            return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC); 
+            }
+            catch(Exception $e){
+                die("Error al obtener los promovidos: ".$e->getMessage());
+                }
+            
+        }
+
+    public function getPromovidos_corrdinador($id_coordinador){  
+        try{
+            $conectar=parent::conexion();
+            parent::set_names();
+            $sql="SELECT * FROM promovidos WHERE estatus='1' AND id_coordinador=?";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1,$id_coordinador);
+            $sql->execute();
+            return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC); 
+            }
+            catch(Exception $e){
+                die("Error al obtener los promovidos: ".$e->getMessage());
+                }
+            
+        }
+
+        public function getPromovidos_lider($id_lider){  
+            try{
+                $conectar=parent::conexion();
+                parent::set_names();
+                $sql="SELECT * FROM promovidos WHERE estatus='1' AND id_lider=?";
+                $sql=$conectar->prepare($sql);
+                $sql->bindValue(1,$id_lider);
+                $sql->execute();
+                return $resultado=$sql->fetchAll(PDO::FETCH_ASSOC); 
+                }
+                catch(Exception $e){
+                    die("Error al obtener los promovidos: ".$e->getMessage());
+                    }   
+        }
+
+
 
 
     }

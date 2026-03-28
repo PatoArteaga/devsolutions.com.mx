@@ -22,7 +22,7 @@ class Conectar{
 
     public static function ruta(){
         return "http://localhost:8888/devsolutions.com.mx/fundacion/";    
-        //return "http://localhost/devsolutions.com.mx/fundacion/";
+        //return "http://192.168.1.73:8888/devsolutions.com.mx/fundacion/";
     }
 
 }

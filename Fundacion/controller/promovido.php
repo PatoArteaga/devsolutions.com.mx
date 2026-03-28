@@ -8,7 +8,7 @@ $promovido=new Promovido();
 switch($_GET["op"]){
 
     case "guardar":
-                $datos=$promovido->getPromovidos($_POST["txtClaveElector"]);
+                $datos=$promovido->getPromovido($_POST["txtClaveElector"]);
                 if(is_array($datos) and count($datos)==0){
 
                     if(ISSET($_POST["txtTelefono"]) && !empty($_POST["txtTelefono"])){
@@ -100,9 +100,11 @@ switch($_GET["op"]){
                     
                     $promovido->registrarPromovido($_POST["txtNombre"],$_POST["txtApellido1"],$_POST["txtApellido2"],$telefono,$_POST["txtClaveElector"],$_POST["txtCalle"],$_POST["txtNumero"],$_POST["txtColonia"],$_POST["txtCp"],$_POST["txtMunicipio"],$_POST["txtSeccionElectoral"],$dv,$abierto,$foto1,$foto2,$foto3,$comentarios,$id_coordinador,$id_lider,$capturo,$aplica_meta,$estatus);
                 }
+
                 else{
                     echo "clave";//envia al ajax(frontend):  "La clave de elector ya existe, por favor verifica.";
                 }
+                
                 break;
 
 

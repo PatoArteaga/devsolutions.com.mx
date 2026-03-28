@@ -44,6 +44,7 @@ function guardaryEditar(e){
                     icon: "error",
                     confirmButtonText: "ok",
                     });
+                    datos="";
                 }
             else{
                 Swal.fire({
